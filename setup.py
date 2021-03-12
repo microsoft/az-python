@@ -57,7 +57,7 @@ setup(
         "redis==3.5.3",
         "pyzmq==19.0.2",
         "requests==2.24.0",
-        "psutil==5.7.2",
+        "psutil==5.8.0",
         "deepdiff==5.2.3",
         "azure-storage-blob<13.0.0,>=12.6.0",
         "azure-storage-common==2.1.0",
