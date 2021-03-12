@@ -135,7 +135,7 @@ setup(
         "pip==20.3.3",
         "Pillow>=6.2",
         "preshed==3.0.4",
-        "protobuf==3.14.0",
+        "protobuf==3.15.6",
         "playfab==0.0.200914",
         "pluggy==0.13.1",
         "psycopg2==2.8.6", 
