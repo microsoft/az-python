@@ -14,7 +14,7 @@ readme = io.open("./README.md", encoding="utf-8").read()
 
 setup(
     name="pre-ai-python",
-    version="0.0.0",
+    version="0.0.1",
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
@@ -70,7 +70,7 @@ setup(
         "azure-search-documents==11.1.0b3",
         "azure-servicebus==0.50.3",
         "azure-storage==0.36.0",
-        "azure-storage-blob<13.0.0,>=12.6.0
+        "azure-storage-blob<13.0.0,>=12.6.0",
         "azure-storage-common==2.1.0",
         "azure-storage-file==2.1.0",
         "azure-storage-file-datalake",
@@ -133,7 +133,7 @@ setup(
         "pbr==5.4.5",
         "pkgconfig",
         "pip==20.3.3",
-        "Pillow>=6.2
+        "Pillow>=6.2",
         "preshed==3.0.4",
         "protobuf==3.14.0",
         "playfab==0.0.200914",
