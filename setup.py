@@ -45,7 +45,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
     setup_requires=[
-        "jupyter-packaging==0.7.11",
+        "jupyter-packaging==0.7.12",
         "numpy==1.19.5",
         "pip-tools==5.5.0",
         "scikit-build==0.11.1",
