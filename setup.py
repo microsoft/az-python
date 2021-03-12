@@ -52,7 +52,7 @@ setup(
         "scipy==1.4.1",
     ],
     install_requires=[      
-        "holidays==0.10.3",
+        "holidays==0.10.5.2",
         "pyaml==20.4.0",
         "redis==3.5.3",
         "pyzmq==19.0.2",
