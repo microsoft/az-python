@@ -52,7 +52,7 @@ setup(
         "scipy==1.4.1",
     ],
     install_requires=[      
-        "aiohttp==3.6.2",
+        "aiohttp==3.7.4.post0",
         "asyncio==3.4.3",
         "azure-ai-formrecognizer==3.0.0",
         "azure-cognitiveservices-vision-customvision==1.0.0",
