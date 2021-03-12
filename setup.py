@@ -181,5 +181,4 @@ setup(
     package_data={
     },
     zip_safe=False,
-    ext_modules=extensions,
 )
