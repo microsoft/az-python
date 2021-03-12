@@ -13,7 +13,7 @@ from distutils.core import setup
 readme = io.open("./README.md", encoding="utf-8").read()
 
 setup(
-    name="microsoft-ai-python",
+    name="pre-ai-python",
     version="0.0.0",
     description="Microsoft AI Python Package",
     long_description=readme,
