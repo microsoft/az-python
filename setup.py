@@ -100,7 +100,7 @@ setup(
         "fastai==2.2.7",
         "fastapi==0.61.0",
         "feedparser==5.2.1",
-        "flask>=1.0.3,<=1.1.1
+        "flask>=1.0.3,<=1.1.1",
         "flask-login==0.5.0",
         "geopandas==0.8.2",
         "gym>=0.15.6",
@@ -109,7 +109,7 @@ setup(
         "ipython==7.17.0",
         "jieba3k==0.35.1",
         "joblib==0.16.0",
-        "kiwisolver>=1.0.0
+        "kiwisolver>=1.0.0",
         "lasio==0.25.0",
         "lightgbm==2.3.0",
         "llvmlite==0.35.0",
@@ -125,9 +125,9 @@ setup(
         "opencv-python-headless==4.3.0.36",
         "opencv-python==4.3.0.36",
         "ortools==7.8.7959",
-        "pandas==1.1.3",
+        "pandas>=1.0.3,<=1.1.3",
         "pathfinder==0.6.2",
-        "pathlib2>=2.2.0
+        "pathlib2>=2.2.0",
         "pathspec==0.8.0",
         "pathtools",
         "pbr==5.4.5",
