@@ -61,7 +61,7 @@ setup(
         "deepdiff==5.2.3",
         "azure-storage-blob<13.0.0,>=12.6.0",
         "azure-storage-common==2.1.0",
-        "geopy==2.0.0",
+        "geopy==2.1.0",
         "pandas==0.25.3",
         "PyYAML==5.4.1",
         "paramiko==2.7.2"
