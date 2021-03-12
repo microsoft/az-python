@@ -142,7 +142,7 @@ setup(
         "pydantic==1.7.3",
         "pyodbc==4.0.30",
         "pypandoc==1.5.0",
-        "pyparsing>=2.0.3
+        "pyparsing>=2.0.3",
         "pyscaffold==3.2.1",
         "pyspark==2.4.0",
         "python-dateutil>=2.1",
