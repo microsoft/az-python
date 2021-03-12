@@ -61,7 +61,7 @@ setup(
         "azure-cosmos==4.2.0",
         "azure-cosmosdb-table==1.0.6",
         "azure-data-tables==12.0.0b1",
-        "azure-functions==1.3.0",
+        "azure-functions==1.6.0",
         "azure-keyvault==4.1.0",
         "azure-keyvault-secrets==4.2.0",
         "azure-mgmt-compute",
