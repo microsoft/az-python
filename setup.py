@@ -106,7 +106,7 @@ setup(
         "gym>=0.15.6",
         "hyperopt==0.2.3",
         "interpret-core==0.2.0",
-        "ipython==7.17.0",
+        "ipython==7.21.0",
         "jieba3k==0.35.1",
         "joblib==0.16.0",
         "kiwisolver>=1.0.0",
