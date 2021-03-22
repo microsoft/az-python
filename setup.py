@@ -160,7 +160,7 @@ setup(
         "seqeval==1.2.2",
         "sentencepiece==0.1.95",
         "sentinelsat==0.14",
-        "setuptools==51.1.1",
+        "setuptools==54.1.3",
         "spacy<2.3.5",
         "tensorflow>=2.2.2,<2.4",
         "termcolor==1.1.0",
