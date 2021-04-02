@@ -29,8 +29,6 @@ extends:
     stages:
     - stage: OfflineTesting
       jobs:
-      - checkout: industrialai
-
       - job: unit_test
         container: $[variables.LinuxContainerImage]
         pool:
@@ -38,6 +36,8 @@ extends:
         variables: # More settings at https://aka.ms/obpipelines/yaml/jobs
           ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
         steps:
+        - checkout: industrialai
+
         - template: .ci/steps/python_ai_test.yml@microsoftai
 
       - job: package_scanning
