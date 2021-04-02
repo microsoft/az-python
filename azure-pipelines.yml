@@ -29,5 +29,3 @@ extends:
 
     stages:
       - template: .ci/stage/python_unit_test_stage.yml@microsoftai
-        parameters:
-          eap: $(CDP_USER_MODULE)
