@@ -11,7 +11,7 @@ pool:
 
 steps:
 - checkout: self
-- checkout: git://msazure.visualstudio.com/One/_git/AGAI-Industrial-AI
+- checkout: AGAI-Industrial-AI
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
