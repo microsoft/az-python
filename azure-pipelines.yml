@@ -27,4 +27,22 @@ extends:
         break: true # always break the build on policheck issues. You can disable it by setting to 'false'
 
     stages:
-      - template: .ci/stage/python_unit_test_stage.yml@microsoftai
+    - stage: OfflineTesting
+      jobs:
+      - job: unit_test
+        container: $[variables.LinuxContainerImage]
+        pool:
+          type: linux
+        variables: # More settings at https://aka.ms/obpipelines/yaml/jobs
+          ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
+        steps:
+        - template: .ci/steps/python_ai_test.yml@microsoftai
+
+      - job: package_scanning
+        container: $[variables.LinuxContainerImage]
+        pool:
+          type: linux
+        variables: # More settings at https://aka.ms/obpipelines/yaml/jobs
+          ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
+        steps:
+        - template: .ci/steps/python_ai_safety.yml@microsoftai
