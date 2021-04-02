@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
+- checkout: https://msazure.visualstudio.com/One/_git/AGAI-Industrial-AI
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
