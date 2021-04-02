@@ -29,6 +29,8 @@ extends:
     stages:
     - stage: OfflineTesting
       jobs:
+      - checkout: industrialai
+
       - job: unit_test
         container: $[variables.LinuxContainerImage]
         pool:
