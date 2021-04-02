@@ -9,6 +9,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  repositories:
+  - repository: AGAI-Industrial-AI
+    type: git
+    name: One/AGAI-Industrial-AI
+
 steps:
 - checkout: self
 - checkout: AGAI-Industrial-AI
