@@ -18,7 +18,6 @@ resources:
     - repository: industrialai
       type: git
       name: one/AGAI-Industrial-AI
-      ref: refs/heads/release/eap_alpha_5
 
 extends:
   template: v2/OneBranch.NonOfficial.CrossPlat.yml@templates # https://aka.ms/obpipelines/templates
