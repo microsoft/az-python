@@ -132,7 +132,7 @@ setup(
         "pathtools",
         "pbr==5.4.5",
         "pkgconfig",
-        "pip==20.3.3",
+        "pip==21.0.1",
         "Pillow>=6.2",
         "preshed==3.0.4",
         "protobuf==3.15.7",
