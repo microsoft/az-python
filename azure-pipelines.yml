@@ -1,5 +1,13 @@
 trigger: none
 
+pr:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - setup.py
+
 variables:
   - group: AGAI-Template-Default
   - name: CDP_DEFINITION_BUILD_COUNT
