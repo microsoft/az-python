@@ -152,7 +152,7 @@ setup(
         "pyyaml==5.4.1",
         "randomgen==1.19.3",
         "ray[rllib]==1.1.0",
-        "regex==2020.7.14",
+        "regex==2021.4.4",
         "requests==2.24.0",
         "scikit-learn<=0.23.0",
         "scipy==1.5.4",
