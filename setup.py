@@ -76,7 +76,7 @@ setup(
         "azure-storage-file-datalake",
         "azure-storage-nspkg==3.1.0",
         "azure-storage-queue==12.1.4",
-        "azureml-contrib-automl-pipeline-steps==1.21.0",
+        "azureml-contrib-automl-pipeline-steps==1.26.0",
         "azureml-core==1.21.0.post2",
         "azureml-defaults==1.21.0",
         "azureml-pipeline==1.21.0",
