@@ -164,7 +164,7 @@ setup(
         "spacy<2.3.5",
         "tensorflow>=2.2.2,<2.4",
         "termcolor==1.1.0",
-        "toml==0.10.1",
+        "toml==0.10.2",
         "torch==1.7.1",
         "torchvision==0.8.2",
         "tqdm==4.46.0",
