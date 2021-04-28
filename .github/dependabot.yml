@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  assignees:
+  - dciborow
+  allow:
+  - dependency-type: direct
+  - dependency-type: indirect
+  ignore:
+  - dependency-name: azureml-core
+    versions:
+    - 1.25.0
+    - 1.26.0
+  - dependency-name: azureml-contrib-automl-pipeline-steps
+    versions:
+    - 1.25.0
+    - 1.26.0
+  - dependency-name: setuptools
+    versions:
+    - 54.1.1
+    - 54.1.2
+    - 54.1.3
+  - dependency-name: protobuf
+    versions:
+    - 3.15.6
+  - dependency-name: azure-functions
+    versions:
+    - 1.6.0
+  - dependency-name: ipython
+    versions:
+    - 7.21.0
+  - dependency-name: geopy
+    versions:
+    - 2.1.0
