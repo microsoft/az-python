@@ -18,7 +18,7 @@ install_requires=[
     "azure-ai-formrecognizer==3.0.0",
     "azure-cognitiveservices-vision-customvision==1.0.0",
     "azure-cognitiveservices-vision-computervision==0.7.0",
-    "azure-core==1.10.0",
+    "azure-core==1.14.0",
     "azure-cosmos==4.2.0",
     "azure-cosmosdb-table==1.0.6",
     "azure-data-tables==12.0.0b1",
