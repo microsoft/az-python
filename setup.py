@@ -21,7 +21,7 @@ install_requires=[
     "azure-core==1.10.0",
     "azure-cosmos==4.2.0",
     "azure-cosmosdb-table==1.0.6",
-    "azure-data-tables==12.0.0b1",
+    "azure-data-tables==12.0.0b7",
     "azure-functions==1.7.0",
     "azure-keyvault==4.1.0",
     "azure-keyvault-secrets==4.2.0",
