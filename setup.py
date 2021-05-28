@@ -114,7 +114,7 @@ install_requires=[
     "randomgen==1.19.3",
     "ray[rllib]==1.1.0",
     "regex==2021.4.4",
-    "requests==2.24.0",
+    "requests==2.25.1",
     "scikit-learn<=0.23.0",
     "scipy==1.5.4",
     "seaborn==0.10.1",
