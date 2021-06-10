@@ -98,7 +98,7 @@ install_requires = [
     "playfab==0.0.200914",
     "pluggy==0.13.1",
     "psycopg2==2.8.6", 
-    "pydantic==1.7.3",
+    "pydantic==1.7.4",
     "pyodbc==4.0.30",
     "pypandoc==1.5.0",
     "pyparsing>=2.0.3",
