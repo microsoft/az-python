@@ -220,6 +220,8 @@ SETUP_REQUIRES = [
     "scipy==1.4.1",
 ]
 
+install_requires = install_requires + CI_RETAIL_UTILS + CI_CDM2AI
+
 setup(
     name="ai-python",
     version="0.0.2",
@@ -251,7 +253,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
     setup_requires=SETUP_REQUIRES,
-    install_requires=install_requires + CI_RETAIL_UTILS + CI_CDM2AI,
+    install_requires=install_requires,
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,
     zip_safe=False,
