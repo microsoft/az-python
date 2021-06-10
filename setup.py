@@ -60,7 +60,7 @@ install_requires = [
     "eli5==0.10.0",
     "fairlearn==0.5.0",
     "fastai==2.2.7",
-    "fastapi==0.61.0",
+    "fastapi==0.65.2",
     "feedparser==5.2.1",
     "flask>=1.0.3,<=1.1.1",
     "flask-login==0.5.0",
