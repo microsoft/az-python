@@ -12,10 +12,12 @@ from distutils.core import setup
 
 readme = io.open("./README.md", encoding="utf-8").read()
 
+setuptools = "setuptools>=54.2.0,<=54.2.0"
+
 install_requires = [
     "aiohttp==3.7.4.post0",
     "asyncio==3.4.3",
-    "azure-ai-formrecognizer==3.0.0",
+    "azure-ai-formrecognizer==3.1.0",
     "azure-cognitiveservices-vision-customvision==1.0.0",
     "azure-cognitiveservices-vision-computervision==0.7.0",
     "azure-core==1.10.0",
@@ -117,7 +119,7 @@ install_requires = [
     "seqeval==1.2.2",
     "sentencepiece==0.1.95",
     "sentinelsat==0.14",
-    "setuptools==54.2.0",
+    setuptools,
     "spacy<2.3.5",
     "tensorflow>=2.2.2,<2.4",
     "termcolor==1.1.0",
@@ -133,56 +135,56 @@ install_requires = [
 ]
 
 test_requires = [
-    "attrs>=19.3.0",
-    "azureml-contrib-reinforcementlearning==1.21.0",
-    "bandit==1.6.2",
-    "black==19.10b0",
-    "check-manifest==0.45",
+    "attrs>=19.3.0,<=19.3.0",
+    "azureml-contrib-reinforcementlearning>=1.21.0,<=1.21.0",
+    "bandit>=1.6.2,<=1.6.2",
+    "black>=19.10b0,<=19.10b0",
+    "check-manifest>=0.45,<=0.45",
     "cryptography>=3.3,<3.4.0",
     "Cython",
-    "flake8-bugbear==19.8.0",
-    "flake8-docstrings",
-    "flake8-formatter_junit_xml",
-    "flake8==3.8.3",
-    "flit-core==2.3.0",
-    "flit==2.3.0",
-    "ipykernel",
-    "ipyleaflet<0.14.0",
-    "junit-xml==1.8",
-    "jupyter-packaging<0.8",
-    "lxml>=4.6.2",
-    "mock==4.0.2",
-    "mypy==0.720",
+    "flake8-bugbear>=19.8.0,<=19.8.0",
+    "flake8-docstrings>=1.6.0,<=1.6.0",
+    "flake8-formatter_junit_xml>=0.0.6,<=0.0.6",
+    "flake8>=3.8.3,<=3.8.3",
+    "flit-core>=2.3.0,<=2.3.0",
+    "flit>=2.3.0,<=2.3.0",
+    "ipykernel>=5.5.5,<=5.5.5",
+    "ipyleaflet>=0.13.6,<0.14.0",
+    "junit-xml>=1.8,<=1.8",
+    "jupyter-packaging>=0.7.12,<0.8",
+    "lxml>=4.6.2,<=4.6.3",
+    "mock>=4.0.2,<=4.0.2",
+    "mypy>=0.720,<=0.720",
     "numpy<1.19.0",
-    "papermill==2.1.2",
-    "pathlib2>=2.2.0",
-    "pbr==5.4.5", 
-    "pre-commit==2.8.2",
-    "pylint>=2.7.0",
-    "pylint_junit",
-    "pytest-cov==2.7.1",
-    "pytest-mock<=3.6.1",
-    "pytest-runner",
-    "pytest==6.2.1",
-    "scrapbook==0.5.0",
-    "setuptools-scm",   
-    "setuptools==51.1.1",
-    "shellcheck-py==0.7.1.1",
-    "syncer==1.3.0",
-    "testpath==0.4.4",
-    "typing-extensions==3.7.4.2",
+    "papermill>=2.1.2,<=2.1.2",
+    "pathlib2>=2.2.0,<=2.3.5",
+    "pbr>=5.4.5,<=5.4.5", 
+    "pre-commit>=2.8.2,<=2.8.2",
+    "pylint>=2.7.0,<=2.8.3",
+    "pylint_junit>=0.3.2,<=0.3.2",
+    "pytest-cov>=2.7.1,<=2.7.1",
+    "pytest-mock>=3.6.1,<=3.6.1",
+    "pytest-runner>=5.3.1,<=5.3.1",
+    "pytest>=6.2.1,<=6.2.1",
+    "scrapbook>=0.5.0,<=0.5.0",
+    "setuptools-scm>=6.0.1,<=6.0.1",   
+    setuptools,
+    "shellcheck-py>=0.7.1.1,<=0.7.1.1",
+    "syncer>=1.3.0,<=1.3.0",
+    "testpath>=0.4.4,<=0.4.4",
+    "typing-extensions>=3.7.4.2,<=3.7.4.2",
 ]
 
 azure_identity = 'azure-identity<1.5.0'
 azure_storage_file_datalake = "azure-storage-file-datalake<=12.4.0"
-azureml_core = "azureml-core==1.21.0.post2"
-commondatamodel_objectmodel = "commondatamodel-objectmodel==1.2.2"
+azureml_core = "azureml-core>=1.21.0.post2,<=1.21.0.post2"
+commondatamodel_objectmodel = "commondatamodel-objectmodel>=1.2.2,<=1.2.2"
 dotenv = "python-dotenv>=0.14.0,<=0.14.0"
 ms_recommenders = "ms-recommenders>=0.5.0.post1621329415,<=0.5.0.post1621329415"
 pandas = "pandas>=1.0.3,<=1.1.3"
 pydantic = "pydantic>1.7.3,<=1.7.4"
 pyspark = "pyspark>2.4.2,<=2.4.5"
-requests = "requests==2.24.0"
+requests = "requests>=2.24.0,<=2.24.0"
 
 CI_RETAIL_UTILS = [
     azure_storage_file_datalake,
