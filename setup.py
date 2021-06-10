@@ -13,6 +13,7 @@ from distutils.core import setup
 readme = io.open("./README.md", encoding="utf-8").read()
 
 setuptools = "setuptools>=54.2.0,<=54.2.0"
+pydantic = "pydantic==1.7.3"
 
 install_requires = [
     "aiohttp==3.7.4.post0",
@@ -100,7 +101,7 @@ install_requires = [
     "playfab==0.0.200914",
     "pluggy==0.13.1",
     "psycopg2==2.8.6", 
-    "pydantic==1.7.3",
+    pydantic,
     "pyodbc==4.0.30",
     "pypandoc==1.5.0",
     "pyparsing>=2.0.3",
