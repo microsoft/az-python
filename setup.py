@@ -205,7 +205,7 @@ CI_CDM2AI = [
 ]
 
 extras = {
-    "required": [],
+    "required": install_requires + CI_RETAIL_UTILS + CI_CDM2AI,
     "all": install_requires + CI_RETAIL_UTILS + CI_CDM2AI,
     "test": test_requires,
     "retail-utils": CI_RETAIL_UTILS,
