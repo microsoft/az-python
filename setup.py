@@ -12,7 +12,7 @@ from distutils.core import setup
 
 readme = io.open("./README.md", encoding="utf-8").read()
 
-install_requires=[      
+install_requires = [
     "aiohttp==3.7.4.post0",
     "asyncio==3.4.3",
     "azure-ai-formrecognizer==3.0.0",
@@ -34,7 +34,6 @@ install_requires=[
     "azure-storage-blob<13.0.0,>=12.6.0",
     "azure-storage-common==2.1.0",
     "azure-storage-file==2.1.0",
-    "azure-storage-file-datalake",
     "azure-storage-nspkg==3.1.0",
     "azure-storage-queue==12.1.4",
     "azureml-contrib-automl-pipeline-steps==1.27.0",
@@ -86,7 +85,6 @@ install_requires=[
     "opencv-python-headless==4.3.0.36",
     "opencv-python==4.3.0.36",
     "ortools==7.8.7959",
-    "pandas>=1.0.3,<=1.1.3",
     "pathfinder==0.6.2",
     "pathlib2>=2.2.0",
     "pathspec==0.8.0",
@@ -107,14 +105,12 @@ install_requires=[
     "pyscaffold==3.2.1",
     "pyspark==2.4.0",
     "python-dateutil>=2.1",
-    "python-dotenv==0.14.0",
     "pytorch-pretrained-bert==0.6.2",
     "pytz==2020.1",
     "pyyaml==5.4.1",
     "randomgen==1.19.3",
     "ray[rllib]==1.1.0",
     "regex==2021.4.4",
-    "requests==2.24.0",
     "scikit-learn<=0.23.0",
     "scipy==1.5.4",
     "seaborn==0.10.1",
@@ -136,7 +132,7 @@ install_requires=[
     "wget==3.2",
 ]
 
-test_requires=[
+test_requires = [
     "attrs>=19.3.0",
     "azureml-contrib-reinforcementlearning==1.21.0",
     "bandit==1.6.2",
@@ -177,14 +173,53 @@ test_requires=[
     "typing-extensions==3.7.4.2",
 ]
 
+azure_identity = 'azure-identity<1.5.0'
+azure_storage_file_datalake = "azure-storage-file-datalake<=12.4.0"
+azureml_core = "azureml-core==1.21.0.post2"
+commondatamodel_objectmodel = "commondatamodel-objectmodel==1.2.2"
+dotenv = "python-dotenv>=0.14.0,<=0.14.0"
+ms_recommenders = "ms-recommenders>=0.5.0.post1621329415,<=0.5.0.post1621329415"
+pandas = "pandas>=1.0.3,<=1.1.3"
+pydantic = "pydantic>1.7.3,<=1.7.4"
+pyspark = "pyspark>2.4.2,<=2.4.5"
+requests = "requests==2.24.0"
+
+CI_RETAIL_UTILS = [
+    azure_storage_file_datalake,
+    azureml_core,
+    commondatamodel_objectmodel,
+    ms_recommenders,
+    pydantic,
+    pyspark,
+    dotenv,
+    requests
+]
+
+CI_CDM2AI = [
+    azure_identity,
+    azure_storage_file_datalake,
+    pandas,
+    pyspark,
+]
+
 extras = {
     "required": [],
-    "all": install_requires,
+    "all": install_requires + CI_RETAIL_UTILS + CI_CDM2AI,
     "test": test_requires,
+    "retail-utils": CI_RETAIL_UTILS,
+    "retail-cdm2ai": CI_CDM2AI
 }
 
+SETUP_REQUIRES = [
+    "jupyter-packaging==0.7.12",
+    "numpy==1.19.5",
+    "pip-tools==5.5.0",
+    "scikit-build==0.11.1",
+    "scipy==1.4.1",
+]
+
 setup(
-    name="pre-ai-python",
+    name="ai-python",
     version="0.0.1",
     description="Microsoft AI Python Package",
     long_description=readme,
@@ -199,9 +234,7 @@ setup(
     },
     license="MIT License",
     platforms=["Windows", "Linux", "macOS"],
-    keywords=[
-        "ai",
-    ],
+    keywords=["ai"],
     classifiers=[
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
@@ -215,20 +248,10 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
-    setup_requires=[
-        "jupyter-packaging==0.7.12",
-        "numpy==1.19.5",
-        "pip-tools==5.5.0",
-        "scikit-build==0.11.1",
-        "scipy==1.4.1",
-    ],
+    setup_requires=SETUP_REQUIRES,
     install_requires=[],
     extra_requires=extras,
-    entry_points={
-    },
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,
-    package_data={
-    },
     zip_safe=False,
 )
