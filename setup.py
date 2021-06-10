@@ -128,7 +128,7 @@ install_requires = [
     "torchvision==0.8.2",
     "tqdm==4.46.0",
     "transformers==4.2.0",
-    "urllib3==1.25.10",
+    "urllib3==1.26.5",
     "utm==0.6.0",
     "uvicorn==0.12.2",
     "wget==3.2",
