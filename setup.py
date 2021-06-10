@@ -84,7 +84,7 @@ install_requires = [
     "nltk==3.5",
     "numba==0.52.0",
     "opencensus-ext-azure==1.0.5",
-    "opencv-python-headless==4.3.0.36",
+    "opencv-python-headless>=4.3.0.36,<=4.3.0.36",
     "opencv-python==4.3.0.36",
     "ortools==7.8.7959",
     "pathfinder==0.6.2",
