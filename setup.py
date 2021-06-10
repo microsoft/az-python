@@ -24,7 +24,7 @@ install_requires = [
     "azure-cosmos==4.2.0",
     "azure-cosmosdb-table==1.0.6",
     "azure-data-tables==12.0.0b1",
-    "azure-functions==1.7.0",
+    "azure-functions>=1.7.0,<=1.7.0",
     "azure-keyvault==4.1.0",
     "azure-keyvault-secrets==4.2.0",
     "azure-mgmt-compute",
@@ -173,6 +173,16 @@ test_requires = [
     "syncer>=1.3.0,<=1.3.0",
     "testpath>=0.4.4,<=0.4.4",
     "typing-extensions>=3.7.4.2,<=3.7.4.2",
+    'azure-identity<1.5.0',
+    "azure-storage-file-datalake<=12.4.0",
+    "azureml-core>=1.21.0.post2,<=1.21.0.post2",
+    "commondatamodel-objectmodel>=1.2.2,<=1.2.2",
+    "python-dotenv>=0.14.0,<=0.14.0",
+    "ms-recommenders>=0.5.0.post1621329415,<=0.5.0.post1621329415",
+    "pandas>=1.0.3,<=1.1.3",
+    "pydantic>1.7.3,<=1.7.4",
+    "pyspark>2.4.2,<=2.4.5",
+    "requests>=2.24.0,<=2.24.0"
 ]
 
 azure_identity = 'azure-identity<1.5.0'
