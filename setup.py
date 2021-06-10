@@ -121,7 +121,7 @@ install_requires = [
     "sentinelsat==0.14",
     "setuptools>=54.2.0,<=54.2.0",
     "spacy<2.3.5",
-    "tensorflow>=2.2.2,<2.4",
+    "tensorflow>=2.2.2,<2.6",
     "termcolor==1.1.0",
     "toml==0.10.2",
     "torch==1.7.1",
