@@ -178,7 +178,7 @@ test_requires = [
     "azureml-core>=1.21.0.post2,<=1.21.0.post2",
     "commondatamodel-objectmodel>=1.2.2,<=1.2.2",
     "python-dotenv>=0.14.0,<=0.14.0",
-    "ms-recommenders>=0.5.0.post1621329415,<=0.5.0.post1621329415",
+    "ms-recommenders>=0.6.0,<=0.6.0",
     "pandas>=1.0.3,<=1.1.3",
     "pydantic>1.7.3,<=1.7.4",
     "pyspark>2.4.2,<=2.4.5",
