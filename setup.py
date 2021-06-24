@@ -58,7 +58,7 @@ install_requires = [
     "dateparser>=0.7.6,<=0.7.6",
     "dm-tree>=0.1.5,<=0.1.5",
     "eli5>=0.10.0,<=0.10.0",
-    "fairlearn>=0.5.0,<=0.5.0",
+    "fairlearn>=0.5.0,<0.7.0",
     "fastai>=2.2.7,<=2.2.7",
     "fastapi>=0.65.2,<=0.65.2",
     "feedparser>=5.2.1,<=5.2.1",
