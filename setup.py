@@ -93,7 +93,7 @@ install_requires = [
     "pathtools",
     "pbr>=5.4.5,<=5.4.5",
     "pkgconfig",
-    "pip==21.0.1",
+    "pip==21.1.2",
     "Pillow>=6.2,<=9.0",
     "preshed>=3.0.4,<=3.0.4",
     "protobuf>=3.15.7,<3.17.4",
