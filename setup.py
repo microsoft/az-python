@@ -141,6 +141,7 @@ test_requires = [
     "black>=19.10b0,<=19.10b0",
     "check-manifest>=0.45,<=0.45",
     "cryptography>=3.3,<3.4.0",
+    "coverage",
     "Cython",
     "flake8-bugbear>=19.8.0,<=19.8.0",
     "flake8-docstrings>=1.6.0,<=1.6.0",
