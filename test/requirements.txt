@@ -39,7 +39,7 @@ testpath>=0.4.4,<=0.4.4
 typing-extensions>=3.7.4.2,<=3.7.4.2
 azure-identity<1.5.0
 azure-storage-file-datalake<=12.4.0
-azureml-core>=1.21.0.post2,<=1.21.0.post2
+azureml-core>=1.21.0.post2
 commondatamodel-objectmodel>=1.2.2,<=1.2.2
 python-dotenv>=0.14.0,<=0.14.0
 ms-recommenders>=0.6.0,<=0.6.0
