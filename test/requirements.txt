@@ -1,5 +1,5 @@
 attrs>=19.3.0,<=19.3.0
-azureml-contrib-reinforcementlearning>=1.21.0,<=1.21.0
+azureml-contrib-reinforcementlearning>=1.21.0
 bandit>=1.6.2,<=1.6.2
 black>=19.10b0,<=19.10b0
 check-manifest>=0.45,<=0.45
