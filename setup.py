@@ -64,7 +64,6 @@ SETUP_REQUIRES = [
     "scipy==1.4.1",
 ]
 
-install_requires = install_requires + CI_RETAIL_UTILS + CI_CDM2AI
 
 setup(
     name="ai-python",
