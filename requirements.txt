@@ -69,7 +69,7 @@ numba>=0.52.0,<=0.52.0
 opencensus-ext-azure>=1.0.5,<=1.0.5
 opencv-python-headless>=4.3.0.36,<4.5.2.55
 opencv-python>=4.3.0.36,<=4.3.0.36
-ortools>=7.8.7959,<=7.8.7959
+ortools>=7.8.7959,<9.0.9049
 pathfinder>=0.6.2,<=0.6.2
 pathlib2>=2.2.0
 pathspec>=0.8.0,<=0.8.0
