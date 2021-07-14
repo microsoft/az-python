@@ -96,7 +96,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
     setup_requires=SETUP_REQUIRES,
-    install_requires=install_requires,
+    extras_require=extras,
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,
     zip_safe=False,
