@@ -4,9 +4,6 @@ pr:
   branches:
     include:
     - main
-  paths:
-    include:
-    - setup.py
 
 variables:
   - group: AGAI-Template-Default
