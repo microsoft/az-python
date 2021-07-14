@@ -68,7 +68,7 @@ install_requires = install_requires + CI_RETAIL_UTILS + CI_CDM2AI
 
 setup(
     name="ai-python",
-    version="0.0.2",
+    version="0.0.3",
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
