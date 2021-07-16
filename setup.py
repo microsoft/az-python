@@ -16,44 +16,14 @@ setuptools = "setuptools>=54.2.0,<=54.2.0"
 
 install_requires = io.open("./requirements.txt", encoding="utf-8").read()
 
+core_requires = io.open("./requirements.txt", encoding="utf-8").read()
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
-azure_identity = 'azure-identity<1.5.0'
-azure_storage_file_datalake = "azure-storage-file-datalake<=12.4.0"
-azureml_core = "azureml-core>=1.21.0.post2,<=1.21.0.post2"
-commondatamodel_objectmodel = "commondatamodel-objectmodel>=1.2.2,<=1.2.2"
-dotenv = "python-dotenv>=0.14.0,<=0.14.0"
-ms_recommenders = "ms-recommenders>=0.6.0,<=0.6.0"
-pandas = "pandas>=1.0.3,<=1.1.3"
-pydantic = "pydantic>1.7.3,<=1.7.4"
-pyspark = "pyspark>2.4.2,<=2.4.5"
-requests = "requests>=2.24.0,<=2.24.0"
-
-CI_RETAIL_UTILS = [
-    azure_storage_file_datalake,
-    azureml_core,
-    commondatamodel_objectmodel,
-    ms_recommenders,
-    pydantic,
-    pyspark,
-    dotenv,
-    requests
-]
-
-CI_CDM2AI = [
-    azure_identity,
-    azure_storage_file_datalake,
-    pandas,
-    pyspark,
-]
-
 extras = {
     "required": install_requires,
-    "all": install_requires,
+    "core": core_requires,
     "test": test_requires,
-    "retail-utils": CI_RETAIL_UTILS,
-    "retail-cdm2ai": CI_CDM2AI
 }
 
 SETUP_REQUIRES = [
@@ -67,7 +37,7 @@ SETUP_REQUIRES = [
 
 setup(
     name="ai-python",
-    version="0.0.4",
+    version="0.1.0",
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
