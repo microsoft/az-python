@@ -35,7 +35,7 @@ SETUP_REQUIRES = [
 
 setup(
     name="ai-python",
-    version="0.1.0",
+    version="0.1.1",
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
