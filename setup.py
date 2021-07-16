@@ -14,14 +14,12 @@ readme = io.open("./README.md", encoding="utf-8").read()
 
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
-install_requires = io.open("./requirements.txt", encoding="utf-8").read()
-
 core_requires = io.open("./requirements.txt", encoding="utf-8").read()
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
 extras = {
-    "required": install_requires,
+    "required": [],
     "core": core_requires,
     "test": test_requires,
 }
