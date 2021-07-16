@@ -60,8 +60,8 @@ flask>=1.0.3,<=1.1.1
 GDAL==2.4.2
 GeoAlchemy2==0.8.4
 geopandas==0.8.2
-gym>=0.15.6                  # https://github.com/openai/gym/issues/2174 # gym>=0.17.2
-h5py                        # ==3.1.0
+gym>=0.15.6
+h5py
 holidays==0.11.1
 hyperopt
 interpret-core==0.2.0
