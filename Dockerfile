@@ -138,8 +138,8 @@ RUN python3.7 -m pip download \
 # Download and Install Private Dependancies
 # -----------------------------------------------------------------#
 
-ARG CDP_DEFAULT_CLIENT_PACKAGE_PAT
-ENV AZURE_DEVOPS_EXT_PAT=$ADO_PAT \
+ARG MSAZURE_ADO_PAT
+ENV AZURE_DEVOPS_EXT_PAT=$MSAZURE_ADO_PAT \
     INTERNAL_PACKAGES="microsoft-industrialai==0.1.58"
 
 RUN python3.7 -m pip install \
