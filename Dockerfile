@@ -74,8 +74,6 @@ RUN wget "https://download.java.net/java/GA/jdk15/779bf45e88a44cbd9ea6621d33e33d
 # -----------------------------------------------------------------#
 # Prepare Python Environment
 # -----------------------------------------------------------------#
-COPY get-pip.py.sha256 virtualenv.txt /tmp/
-
 RUN curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
     && /usr/bin/python${PY_VER} get-pip.py 'pip==21.1.3'
 
