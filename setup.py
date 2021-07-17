@@ -17,16 +17,18 @@ setuptools = "setuptools>=54.2.0,<=54.2.0"
 core_requires = io.open("./requirements.txt", encoding="utf-8").read()
 ama_requires = io.open("./ama.requirements.txt", encoding="utf-8").read()
 fclib_requires = io.open("./fclib.requirements.txt", encoding="utf-8").read()
+pymaro_requires = io.open("./ai-python/pymaro/pymaro.requirements.txt", encoding="utf-8").read()
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
 extras = {
     "required": [],
-    "all": core_requires + fclib_requires,
+    "all": core_requires + fclib_requires + pymaro_requires,
     "core": core_requires,
     "test": test_requires,
     "fclib": fclib_requires,
     "ama": ama_requires,
+    "pymaro": pymaro_requires,
 }
 
 SETUP_REQUIRES = [
