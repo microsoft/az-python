@@ -1,6 +1,3 @@
 include requirements.txt
 include test/requirements.txt
 include fclib.requirements.txt
-
-include ai-python/fsi/risk.requirements.txt
-include ai-python/maro/maro.requirements.txt
