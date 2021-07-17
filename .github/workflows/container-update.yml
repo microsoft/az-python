@@ -43,6 +43,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
+          cd CDPX-Linux-Images
           git add -A
           git commit -m "Updating Container"
 
