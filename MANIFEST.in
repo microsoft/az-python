@@ -1,3 +1,4 @@
 include requirements.txt
 include test/requirements.txt
 include fclib.requirements.txt
+include ama.requirements.txt
