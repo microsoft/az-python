@@ -74,8 +74,11 @@ RUN wget "https://download.java.net/java/GA/jdk15/779bf45e88a44cbd9ea6621d33e33d
 # -----------------------------------------------------------------#
 # Prepare Python Environment
 # -----------------------------------------------------------------#
+COPY virtualenv.txt /tmp/
+
 RUN curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
-    && /usr/bin/python${PY_VER} get-pip.py 'pip==21.1.3'
+    && /usr/bin/python${PY_VER} get-pip.py 'pip==21.1.3' \
+    && pip3 install --require-hashes --upgrade -r /tmp/virtualenv.txt
 
 RUN mkdir -p /source/packages/pywheel \
     && python3.7 -m pip install \
