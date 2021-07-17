@@ -28,8 +28,6 @@ jobs:
       run: |
         git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
         cd CDPX-Linux-Images
-        git config --global user.email "dciborow@microsoft.com"
-        git config --global user.name "Daniel Ciborowski"
 
         cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
         ./generate.sh -s .
@@ -44,6 +42,9 @@ jobs:
         azcliversion: 2.0.72
         inlineScript: |
           cd CDPX-Linux-Images
+          git config --global user.email "dciborow@microsoft.com"
+          git config --global user.name "Daniel Ciborowski"
+
           git add -A
           git commit -m "Updating Container"
 
