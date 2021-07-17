@@ -19,6 +19,10 @@ jobs:
       run: |
         python3.7 -m pip install --upgrade pip
         python3.7 -m pip install virtualenv
+
+        add-apt-repository -y ppa:ubuntugis/ppa \
+        && apt install -y \
+          gdal-bin libgdal-dev
     
     - name: Update Container
       run: |
