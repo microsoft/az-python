@@ -24,17 +24,33 @@ jobs:
         && sudo apt install -y \
           gdal-bin libgdal-dev
     
-    - name: Update Container
-      run: |
-        git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
-        cd CDPX-Linux-Images
-        git config --global user.email "dciborow@microsoft.com"
-        git config --global user.name "Daniel Ciborowski"
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-        cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
-        ./generate.sh -s .
-        
-        git add -A
-        git commit -m "Updating Container"
-        
-        git push origin --force master:${{ secrets.ADO_USER }}/container-update
+    - name: Azure CLI script
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
+          cd CDPX-Linux-Images
+          git config --global user.email "dciborow@microsoft.com"
+          git config --global user.name "Daniel Ciborowski"
+
+          cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
+          ./generate.sh -s .
+
+          git add -A
+          git commit -m "Updating Container"
+
+          git push origin --force master:${{ secrets.ADO_USER }}/container-update
+
+          az config set extension.use_dynamic_install=yes_without_prompt
+          az repos pr create \
+            --auto-complte true \
+            --organization https://cloudes.visualstudio.com \
+            --project CDPX \
+            --repository CDPX-Linux-Images \
+            --source-branch ${{ secrets.ADO_USER }}/container-update \
+            --target-branch master
