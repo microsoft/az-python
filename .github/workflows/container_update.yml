@@ -32,4 +32,7 @@ jobs:
         
         git add -A
         git commit -m "Updating Container"
-        git push origin --force master:dciborow/container-update
+        
+        git config --global user.email "${{ secrets.ADO_USER }}@microsoft.com"
+        git config --global user.name "${{ secrets.ADO_NAME }}"
+        git push origin --force master:${{ secrets.ADO_USER }}/container-update
