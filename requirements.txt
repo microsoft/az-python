@@ -123,6 +123,7 @@ python-dotenv==0.14.0
 pytorch-pretrained-bert==0.6.2
 pytz==2020.1
 pyvis==0.1.9
+Pygments>=2.7.4
 pyyaml==5.4.1
 randomgen==1.19.3
 rasterio==1.2.1
