@@ -186,7 +186,7 @@ pip==21.1.3 \
     # via
     #   -r piptools.in
     #   pip-tools
-setuptools==49.6.0 \
-    --hash=sha256:46bd862894ed22c2edff033c758c2dc026324788d758e96788e8f7c11f4e9707 \
-    --hash=sha256:4dd5bb0a0a0cff77b46ca5dd3a84857ee48c83e8223886b556613c724994073f
+setuptools==57.2.0 \
+    --hash=sha256:b4bb42f3123fbb01e4f5f5ea9ed6d6b5f7021d18b3bc64236477a82aedf2190e \
+    --hash=sha256:a7e88b9bbaece494162d697d19525c567ab60c85dd7e2fd90cb7dfe8d8129a62
     # via scikit-build

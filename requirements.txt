@@ -138,7 +138,7 @@ seaborn==0.10.1
 sentencepiece==0.1.95
 sentinelsat==0.14
 seqeval==1.2.2
-setuptools==51.1.1
+setuptools==57.2.0
 skorch>=0.10.0
 spacy==3.0.4
 spacy-universal-sentence-encoder==0.4.3
