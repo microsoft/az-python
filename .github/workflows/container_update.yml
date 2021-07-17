@@ -20,3 +20,9 @@ jobs:
     - name: Update Container
       run: |
         git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
+        cd CDPX-Linux-Images/src/user/agai/agai-template-ubuntu-1804/latest/requirements
+        ./generate.sh -s .
+        
+        git add -A
+        git commit -m "Updating Container"
+        git push origin --force master:dciborow/container-update
