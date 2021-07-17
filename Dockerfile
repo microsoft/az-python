@@ -126,7 +126,6 @@ COPY test/requirements.txt /tmp/requirements/test/
 
 RUN python3.7 -m pip download \
         --no-build-isolation \
-        --require-hashes \
         --no-binary :all: \
         --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
@@ -136,7 +135,6 @@ RUN python3.7 -m pip download \
         --no-build-isolation \
         --no-index \
         --find-links "/source/packages/pywheel" \
-        --require-hashes \
         --no-deps \
         --no-binary :all: \
         --only-binary ${BINARY} \
@@ -150,7 +148,6 @@ COPY requirements.txt /tmp/requirements/
 
 RUN python3.7 -m pip download \
         --no-build-isolation \
-        --require-hashes \
         --no-binary :all: \
         --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
@@ -159,7 +156,6 @@ RUN python3.7 -m pip download \
         --no-build-isolation \
         --no-index \
         --find-links "/source/packages/pywheel" \
-        --require-hashes \
         --no-deps \
         --no-binary :all: \
         --only-binary ${BINARY} \
