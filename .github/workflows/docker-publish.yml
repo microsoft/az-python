@@ -52,3 +52,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: "microsoft-ai-python"
           labels: ${{ steps.meta.outputs.labels }}
+          secerts: |
+            MSAZURE_ADO_PAT=${{ secret.MSAZURE_ADO_PAT }}
