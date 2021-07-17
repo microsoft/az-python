@@ -77,9 +77,7 @@ RUN wget "https://download.java.net/java/GA/jdk15/779bf45e88a44cbd9ea6621d33e33d
 COPY get-pip.py.sha256 virtualenv.txt /tmp/
 
 RUN curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
-    && /usr/bin/python${PY_VER} get-pip.py 'pip==21.1.3' \
-    && pip3 install --require-hashes --upgrade -r /tmp/virtualenv.txt \
-    && rm -f get-pip.py /tmp/get-pip.py.sha256 /tmp/virtualenv.txt
+    && /usr/bin/python${PY_VER} get-pip.py 'pip==21.1.3'
 
 RUN mkdir -p /source/packages/pywheel \
     && python3.7 -m pip install \
@@ -123,7 +121,7 @@ RUN python3.7 -m pip download \
 # -----------------------------------------------------------------#
 # Download and Install Test Dependancies
 # -----------------------------------------------------------------#
-COPY requirements/test-linux.txt /tmp/requirements/
+COPY test/requirements.txt /tmp/requirements/test/
 
 RUN python3.7 -m pip download \
         --no-build-isolation \
@@ -131,7 +129,7 @@ RUN python3.7 -m pip download \
         --no-binary :all: \
         --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
-        -r "/tmp/requirements/test-linux.txt" \
+        -r "/tmp/requirements/test/requirements.txt" \
     && /devopsVirtualEnv/bin/python -m pip install \
         --use-deprecated=legacy-resolver \
         --no-build-isolation \
@@ -142,12 +140,12 @@ RUN python3.7 -m pip download \
         --no-binary :all: \
         --only-binary ${BINARY} \
         --upgrade \
-        -r "/tmp/requirements/test-linux.txt"
+        -r "/tmp/requirements/test/requirements.txt"
 
 # -----------------------------------------------------------------#
 # Download and Install Runtime Dependancies
 # -----------------------------------------------------------------#
-COPY requirements/core-linux.txt /tmp/requirements/
+COPY requirements.txt /tmp/requirements/
 
 RUN python3.7 -m pip download \
         --no-build-isolation \
@@ -155,7 +153,7 @@ RUN python3.7 -m pip download \
         --no-binary :all: \
         --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
-        -r "/tmp/requirements/core-linux.txt" \
+        -r "/tmp/requirements/requirements.txt" \
     && /devopsVirtualEnv/bin/python -m pip install \
         --no-build-isolation \
         --no-index \
@@ -165,7 +163,7 @@ RUN python3.7 -m pip download \
         --no-binary :all: \
         --only-binary ${BINARY} \
         --upgrade \
-        -r "/tmp/requirements/core-linux.txt"
+        -r "/tmp/requirements/requirements.txt"
 
 # -----------------------------------------------------------------#
 # Download and Install Private Dependancies
