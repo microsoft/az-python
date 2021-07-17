@@ -15,6 +15,7 @@ readme = io.open("./README.md", encoding="utf-8").read()
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
 core_requires = io.open("./requirements.txt", encoding="utf-8").read()
+ama_requires = io.open("./ama.requirements.txt", encoding="utf-8").read()
 fclib_requires = io.open("./fclib.requirements.txt", encoding="utf-8").read()
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
@@ -25,6 +26,7 @@ extras = {
     "core": core_requires,
     "test": test_requires,
     "fclib": fclib_requires,
+    "ama": ama_requires,
 }
 
 SETUP_REQUIRES = [
