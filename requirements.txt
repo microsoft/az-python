@@ -157,4 +157,5 @@ uvicorn==0.12.2
 validators==0.18.2
 Werkzeug==1.0.1
 wget==3.2
+wheel
 xlrd>=1.0.0
