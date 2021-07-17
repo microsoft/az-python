@@ -2,6 +2,22 @@
 
 This is a library of Python packages scanned using various open source and internal tools to provide up-to-date, and secury dependencies.  
 
+## Installation
+Currently Python3.7 is supported.
+
+### Ubuntu 18.04
+The `aiubuntu` library is provided to simplify installation of required Ubuntu dependancies.
+
+```shell
+add-apt-repository -y ppa:dciborow/ppa \
+&& add-apt-repository -y ppa:deadsnakes/ppa \
+&& apt-get update \
+&& apt-get install -y \
+    aiubuntu \
+    python3.7 \
+    python3.7-dev
+```
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
