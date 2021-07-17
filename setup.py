@@ -18,17 +18,19 @@ core_requires = io.open("./requirements.txt", encoding="utf-8").read()
 ama_requires = io.open("./ama.requirements.txt", encoding="utf-8").read()
 fclib_requires = io.open("./fclib.requirements.txt", encoding="utf-8").read()
 pymaro_requires = io.open("./ai-python/pymaro/pymaro.requirements.txt", encoding="utf-8").read()
+fsi_risk_requires = io.open("./ai-python/fsi/risk.requirements.txt", encoding="utf-8").read()
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
 extras = {
     "required": [],
-    "all": core_requires + fclib_requires + pymaro_requires,
+    "all": core_requires + fclib_requires + pymaro_requires + fsi_risk_requires,
     "core": core_requires,
     "test": test_requires,
     "fclib": fclib_requires,
     "ama": ama_requires,
     "pymaro": pymaro_requires,
+    "fsi-risk": fsi_risk_requires
 }
 
 SETUP_REQUIRES = [
