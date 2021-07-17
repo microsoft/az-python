@@ -11,6 +11,12 @@ jobs:
   update_container:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-    
     - name: Azure CLI script
       uses: azure/CLI@v1
       with:
