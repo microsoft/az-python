@@ -21,7 +21,7 @@ test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
 extras = {
     "required": [],
-    "all": core_requires + fclib_requires
+    "all": core_requires + fclib_requires,
     "core": core_requires,
     "test": test_requires,
     "fclib": fclib_requires,
