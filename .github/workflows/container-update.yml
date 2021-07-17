@@ -52,5 +52,5 @@ jobs:
         method: 'POST'
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
-        data: '{"targetRefName": "master", "sourceRefName": "${{ secrets.ADO_USER }}/container-update", "title": "Dependancy Update"}'
+        data: '{"targetRefName": "master", "sourceRefName": "dciborow/container-update", "title": "Dependancy Update"}'
 
