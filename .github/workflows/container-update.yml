@@ -48,7 +48,7 @@ jobs:
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
       with:
-        url: 'https://cloudes.azure.com/CDPX/_apis/git/repositories/CDPX-Linux-Images/pullrequests?api-version=6.0'
+        url: 'https://cloudes.visualstudio.com/CDPX/_apis/git/repositories/CDPX-Linux-Images/pullrequests?api-version=6.0'
         method: 'POST'
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
