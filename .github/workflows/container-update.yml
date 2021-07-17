@@ -52,7 +52,7 @@ jobs:
           
           az extension add --name azure-devops
           az repos pr create \
-            --auto-complte true \
+            --auto-complete true \
             --organization https://cloudes.visualstudio.com \
             --project CDPX \
             --repository CDPX-Linux-Images \
