@@ -36,10 +36,7 @@ jobs:
 
         cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
         ./generate.sh -s .
-    - uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-        allow-no-subscriptions: true
+
     - name: Azure CLI script
       uses: azure/CLI@v1
       with:
