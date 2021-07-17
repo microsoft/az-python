@@ -11,12 +11,15 @@ jobs:
   update_container:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/cache@v2
+    - name: restore pip download cache
+      # You may pin to the exact commit or the version.
+      # uses: syphar/restore-pip-download-cache@8755b20190cfbeb76a425368e201406b09c4b922
+      uses: syphar/restore-pip-download-cache@v1
       with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-    
+        # requirements-files to use for building the cache key
+        requirement_files: # optional, default is requirements*.txt
+          requirements.txt
+          **/*requirements.txt
 
     - name: Set up Python
       uses: actions/setup-python@v1
