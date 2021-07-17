@@ -53,4 +53,4 @@ jobs:
           tags: "microsoft-ai-python"
           labels: ${{ steps.meta.outputs.labels }}
           secrets: |
-            MSAZURE_ADO_PAT=${{ secret.MSAZURE_ADO_PAT }}
+            MSAZURE_ADO_PAT=${{ secrets.MSAZURE_ADO_PAT }}
