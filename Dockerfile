@@ -107,7 +107,7 @@ RUN python3.7 -m pip download \
         --no-index \
         --find-links "/source/packages/pywheel" \
         --upgrade \
-        pip setuptools cython flit \
+        pip setuptools cython flit pytoml\
     && /devopsVirtualEnv/bin/python -m pip install \
         --no-build-isolation \
         --no-index \
