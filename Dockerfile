@@ -125,19 +125,11 @@ RUN python3.7 -m pip download \
 COPY test/requirements.txt /tmp/requirements/test/
 
 RUN python3.7 -m pip download \
-        --no-build-isolation \
-        --no-binary :all: \
-        --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
         -r "/tmp/requirements/test/requirements.txt" \
     && /devopsVirtualEnv/bin/python -m pip install \
         --use-deprecated=legacy-resolver \
-        --no-build-isolation \
-        --no-index \
         --find-links "/source/packages/pywheel" \
-        --no-deps \
-        --no-binary :all: \
-        --only-binary ${BINARY} \
         --upgrade \
         -r "/tmp/requirements/test/requirements.txt"
 
@@ -147,18 +139,10 @@ RUN python3.7 -m pip download \
 COPY requirements.txt /tmp/requirements/
 
 RUN python3.7 -m pip download \
-        --no-build-isolation \
-        --no-binary :all: \
-        --only-binary ${BINARY} \
         -d "/source/packages/pywheel" \
         -r "/tmp/requirements/requirements.txt" \
     && /devopsVirtualEnv/bin/python -m pip install \
-        --no-build-isolation \
-        --no-index \
         --find-links "/source/packages/pywheel" \
-        --no-deps \
-        --no-binary :all: \
-        --only-binary ${BINARY} \
         --upgrade \
         -r "/tmp/requirements/requirements.txt"
 
