@@ -54,7 +54,7 @@ jobs:
 
           git push origin --force master:${{ secrets.ADO_USER }}/container-update
           
-          az extension add --name azure-devops
+          az login --service-principal -u ${{ secrets.AZURE_USER }} -p ${{ secrets.AZURE_PASS }} -t ${{ secrets.AZURE_TENANT }}
           az repos pr create \
             --auto-complete true \
             --organization https://cloudes.visualstudio.com \
