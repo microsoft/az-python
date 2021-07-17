@@ -50,7 +50,6 @@ jobs:
 
           git push origin --force master:${{ secrets.ADO_USER }}/container-update
 
-          az config set extension.use_dynamic_install=yes_without_prompt
           az repos pr create \
             --auto-complte true \
             --organization https://cloudes.visualstudio.com \
