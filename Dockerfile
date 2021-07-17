@@ -134,19 +134,4 @@ RUN python3.7 -m pip download \
         --upgrade \
         -r "/tmp/requirements/requirements.txt"
 
-# -----------------------------------------------------------------#
-# Download and Install Private Dependancies
-# -----------------------------------------------------------------#
-
-ARG MSAZURE_ADO_PAT
-ENV AZURE_DEVOPS_EXT_PAT=$MSAZURE_ADO_PAT \
-    INTERNAL_PACKAGES="microsoft-industrialai==0.1.58"
-
-RUN python3.7 -m pip install \
-    --extra-index-url "https://${AZURE_DEVOPS_EXT_PAT}@msazure.pkgs.visualstudio.com/One/_packaging/agai-development-pypi/pypi/simple/" \
-    ${INTERNAL_PACKAGES} \
-  && /devopsVirtualEnv/bin/python -m pip install \
-    --extra-index-url "https://${AZURE_DEVOPS_EXT_PAT}@msazure.pkgs.visualstudio.com/One/_packaging/agai-development-pypi/pypi/simple/" \
-    ${INTERNAL_PACKAGES}
-
 RUN apt-get upgrade -y
