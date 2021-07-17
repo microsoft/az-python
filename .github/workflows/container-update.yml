@@ -36,8 +36,7 @@ jobs:
 
         cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
         ./generate.sh -s .
-        
-        cd CDPX-Linux-Images
+
         git config --global user.email "dciborow@microsoft.com"
         git config --global user.name "Daniel Ciborowski"
 
