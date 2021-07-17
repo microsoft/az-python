@@ -44,7 +44,7 @@ jobs:
         git add -A
         git commit -m "Updating Container"
 
-        git push origin --force master:${{ secrets.ADO_USER }}/container-update
+        git push origin --force master:${{ secrets.ADO_USER }}/updateContainer
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
       with:
@@ -52,5 +52,5 @@ jobs:
         method: 'POST'
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
-        data: '{"targetRefName": "master", "sourceRefName": "dciborow/container-update", "title": "Dependancy Update"}'
+        data: '{"targetRefName": "master", "sourceRefName": "dciborow/updateContainer", "title": "Dependancy Update"}'
 
