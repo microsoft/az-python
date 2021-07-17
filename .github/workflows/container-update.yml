@@ -57,16 +57,11 @@ jobs:
 
         git push origin --force master:${{ secrets.ADO_USER }}/container-update
 
-    - name: Azure CLI script
-      uses: azure/CLI@v1
-      with:
-        azcliversion: 2.0.72
-        inlineScript: |          
-          az login --service-principal -u ${{ secrets.AZURE_USER }} -p ${{ secrets.AZURE_PASS }} -t ${{ secrets.AZURE_TENANT }}
-          az repos pr create \
-            --auto-complete true \
-            --organization https://cloudes.visualstudio.com \
-            --project CDPX \
-            --repository CDPX-Linux-Images \
-            --source-branch ${{ secrets.ADO_USER }}/container-update \
-            --target-branch master
+        az login --service-principal -u ${{ secrets.AZURE_USER }} -p ${{ secrets.AZURE_PASS }} -t ${{ secrets.AZURE_TENANT }}
+        az repos pr create \
+          --auto-complete true \
+          --organization https://cloudes.visualstudio.com \
+          --project CDPX \
+          --repository CDPX-Linux-Images \
+          --source-branch ${{ secrets.ADO_USER }}/container-update \
+          --target-branch master
