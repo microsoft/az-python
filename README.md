@@ -6,9 +6,9 @@ This is a library of Python packages scanned using various open source and inter
 Currently Python3.7 is supported.
 
 ### Ubuntu 18.04
-The `aiubuntu` library is provided to simplify installation of required Ubuntu dependancies.
+The aiubuntu library is provided to simplify installation of required Ubuntu dependancies.
 
-```shell
+shell
 add-apt-repository -y ppa:dciborow/ppa \
 && add-apt-repository -y ppa:deadsnakes/ppa \
 && apt-get update \
@@ -21,7 +21,7 @@ curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
 && /usr/bin/python3.7 get-pip.py 'pip==20.3.3'
 
 python3.7 -m pip install ai-python[core]
-```
+
 
 ## Contributing
 
