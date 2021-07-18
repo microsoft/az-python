@@ -23,7 +23,7 @@ ENV PATH="${PATH}:/root/.local/bin"
 RUN sed -i "s://archive\.ubuntu\.com/://azure.archive.ubuntu.com/:" /etc/apt/sources.list \
     && apt-get update \
     && apt-get install -y \
-        sudo apt-utils curl unzip zip bzip2 xz-utils git wget \
+        apt-utils curl unzip zip bzip2 xz-utils git wget \
         libtool build-essential clang libssl-dev libffi-dev libbz2-dev zlib1g-dev libgmp-dev \
         libxrender-dev libsm6 libxml2 libxslt-dev libfreetype6-dev libpng-dev pkg-config libhdf5-dev rustc unixodbc-dev \
         libjpeg-dev libc6 jsonlint \
@@ -133,5 +133,3 @@ RUN python3.7 -m pip download \
         --find-links "/source/packages/pywheel" \
         --upgrade \
         -r "/tmp/requirements/requirements.txt"
-
-RUN apt-get upgrade -y
