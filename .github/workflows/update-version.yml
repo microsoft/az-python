@@ -18,8 +18,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Bump version
-        uses: remorses/bump-version@js
-        with:
-            version_file: ./setup.py
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Automated Version Bump - Python
+        uses: digza/automatic-python-version@0.0.13
+        with:           
+          patch-wording: patch
+          target-branch: main
