@@ -36,7 +36,8 @@ RUN sed -i "s://archive\.ubuntu\.com/://azure.archive.ubuntu.com/:" /etc/apt/sou
         python3.7 python3.7-dev \
     && add-apt-repository -y ppa:ubuntugis/ppa \
     && apt install -y \
-        gdal-bin libgdal-dev
+        gdal-bin libgdal-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 ENV CPLUS_INCLUDE_PATH=/usr/include/gdal C_INCLUDE_PATH=/usr/include/gdal
 
