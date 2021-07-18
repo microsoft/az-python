@@ -22,7 +22,7 @@ ENV PATH="${PATH}:/root/.local/bin"
 # -----------------------------------------------------------------#
 RUN sed -i "s://archive\.ubuntu\.com/://azure.archive.ubuntu.com/:" /etc/apt/sources.list \
     && apt-get update \
-    && apt-get install -y \
+    && apt-get install -y --no-install-recommends\
         apt-utils curl unzip zip bzip2 xz-utils git wget \
         libtool build-essential clang libssl-dev libffi-dev libbz2-dev zlib1g-dev libgmp-dev \
         libxrender-dev libsm6 libxml2 libxslt-dev libfreetype6-dev libpng-dev pkg-config libhdf5-dev rustc unixodbc-dev \
@@ -32,10 +32,10 @@ RUN sed -i "s://archive\.ubuntu\.com/://azure.archive.ubuntu.com/:" /etc/apt/sou
     && apt install -y \
         software-properties-common \
     && add-apt-repository -y ppa:deadsnakes/ppa \
-    && apt install -y \
+    && apt install -y --no-install-recommends\
         python3.7 python3.7-dev \
     && add-apt-repository -y ppa:ubuntugis/ppa \
-    && apt install -y \
+    && apt install -y --no-install-recommends\
         gdal-bin libgdal-dev \
     && rm -rf /var/lib/apt/lists/*
 
