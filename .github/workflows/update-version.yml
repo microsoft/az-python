@@ -18,8 +18,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'      
       - name: Bump Versions
         uses: michmich112/version-bumper@master
         with:
           version-file: "{'path':'./setup.py', 'line':47}"
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          scheme: semantic
+          files: "[]" 
+          rules: '[{"trigger":"commit","bump":"build"}, {"trigger":"commit","branch":"release","bump":"major", "reset":["minor","build"]}]'
