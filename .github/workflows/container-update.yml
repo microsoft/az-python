@@ -49,4 +49,4 @@ jobs:
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
         data: '{"targetRefName": "refs/heads/master", "sourceRefName": "refs/heads/dciborow/updateContainer", "title": "Dependancy Update", "autoCompleteSetBy": "dciborow"}'
-        ignoreStatusCode: 409
+        ignoreStatusCode: '409'
