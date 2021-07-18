@@ -24,7 +24,7 @@ jobs:
       - name: Bump Versions
         uses: michmich112/version-bumper@master
         with:
-          version-file: "{'path':'../../../setup.py', 'line':47}"
+          version-file: "{'path':'setup.py', 'line':47}"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           scheme: semantic
           files: "[]" 
