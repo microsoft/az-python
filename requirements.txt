@@ -129,6 +129,7 @@ randomgen==1.19.3
 rasterio==1.2.1
 ray==1.1.0
 ray[rllib]==1.1.0
+recommenders<=0.6.0
 regex==2020.11.13
 requests>=2.24.0
 rioxarray==0.3.1
