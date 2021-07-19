@@ -2,10 +2,10 @@
 name: Docker Linting
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
+    paths:
+      - 'Dockerfile'    
 
   workflow_dispatch:
 
