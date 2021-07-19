@@ -19,7 +19,7 @@ resources:
     - repository: microsoftai
       type: git
       name: one/AGAI-Industrial-CICD
-      ref: refs/heads/release/eap_alpha_5
+      ref: refs/heads/mattchansky/eap_alpha_5
     - repository: industrialai
       type: git
       name: one/AGAI-Industrial-AI
