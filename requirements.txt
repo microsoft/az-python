@@ -116,7 +116,7 @@ pymaro==0.2.3a2
 pyodbc==4.0.31
 pypandoc==1.5.0
 pyparsing>=2.0.3
-pyscaffold==3.2.1
+pyscaffold==4.0.2
 pyspark==2.4.5
 python-dateutil>=2.1
 python-dotenv==0.14.0
