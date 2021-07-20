@@ -70,7 +70,7 @@ itsdangerous==1.1.0
 jieba3k==0.35.1
 Jinja2==2.11.3
 joblib==1.0.1
-keplergl==0.2.2
+keplergl==0.3.0
 kiwisolver>=1.0.0
 lasio==0.25.0
 lightgbm==2.3.0
