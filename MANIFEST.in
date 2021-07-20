@@ -8,6 +8,6 @@ include ai-python/retail/fclib.requirements.txt
 
 include ai-python/fsi/risk.requirements.txt
 
-include ai-python/log/ip.requirements.txt
-include ai-python/log/ro.requirements.txt
-include ai-python/log/ecr.requirements.txt
+include ai-python/sc/ip.requirements.txt
+include ai-python/sc/ro.requirements.txt
+include ai-python/sc/ecr.requirements.txt
