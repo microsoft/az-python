@@ -22,6 +22,7 @@ core_requires = read_requirements("./requirements.txt")
 ama_requires = read_requirements("./ai-python/msft/ama.requirements.txt")
 maro_requires = read_requirements("./ai-python/maro/maro.requirements.txt")
 
+retail_requires = read_requirements("./ai-python/retail/retail.requirements.txt")
 fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
 
 fsi_risk_requires = read_requirements("./ai-python/fsi/risk.requirements.txt")
@@ -39,7 +40,7 @@ extras = {
     "test": test_requires,
     "ama": ama_requires,
     "maro": maro_requires,
-    "retai": fclib_requires,
+    "retail": retail_requires,
     "fclib": fclib_requires,
     "fsi": fsi_risk_requires
     "fsi-risk": fsi_risk_requires,
