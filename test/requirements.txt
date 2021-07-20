@@ -12,7 +12,7 @@ flake8==3.8.3
 flit-core==2.3.0
 flit==2.3.0
 ipykernel
-ipyleaflet<0.14.0
+ipyleaflet<0.15.0
 junit-xml==1.8
 jupyter-packaging<0.8
 lxml>=4.6.2
