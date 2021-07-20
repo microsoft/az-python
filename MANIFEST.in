@@ -2,13 +2,23 @@ include requirements.txt
 include test/requirements.txt
 
 include ai-python/microsoft/ama.requirements.txt
-include ai-python/maro/maro.requirements.txt
+include ai-python/microsoft/utils.requirements.txt
+
+include ai-python/energy/km.requirements.txt
+include ai-python/energy/ca.requirements.txt
+
+include ai-python/gem/ent.requirements.txt
+include ai-python/gem/reco.requirements.txt
 
 include ai-python/retail/fclib.requirements.txt
 include ai-python/retail/retail.requirements.txt
 
+include ai-python/fsi/nlp.requirements.txt
 include ai-python/fsi/risk.requirements.txt
 
 include ai-python/sc/ip.requirements.txt
 include ai-python/sc/ro.requirements.txt
 include ai-python/sc/ecr.requirements.txt
+
+include ai-python/cdm/cdm.requirements.txt
+include ai-python/maro/maro.requirements.txt
