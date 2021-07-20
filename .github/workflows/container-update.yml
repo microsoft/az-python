@@ -9,6 +9,7 @@ on:
   workflow_run:
     workflows: ["Upload Python Package"]
     types: [completed]
+
 jobs:
   update_container:
     runs-on: ubuntu-latest
