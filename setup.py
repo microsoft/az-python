@@ -17,32 +17,69 @@ setuptools = "setuptools>=54.2.0,<=54.2.0"
 def read_requirements(file_path):
     return io.open(file_path, encoding="utf-8").read()
 
-core_requires = io.open("./requirements.txt", encoding="utf-8").read()
-ama_requires = io.open("./ama.requirements.txt", encoding="utf-8").read()
-fclib_requires = io.open("./fclib.requirements.txt", encoding="utf-8").read()
-maro_requires = io.open("./ai-python/maro/maro.requirements.txt", encoding="utf-8").read()
+core_requires = read_requirements("./requirements.txt")
+test_requires = read_requirements("./test/requirements.txt")
 
-fsi_risk_requires = io.open("./ai-python/fsi/risk.requirements.txt", encoding="utf-8").read()
+msft_ama_requires = read_requirements("./ai-python/msft/ama.requirements.txt")
+msft_utils_requires = read_requirements("./ai-python/msft/utils.requirements.txt")
 
-log_ro_requires = read_requirements("./ai-python/log/ro.requirements.txt")
-log_ip_requires = read_requirements("./ai-python/log/ip.requirements.txt")
-log_ecr_requires = read_requirements("./ai-python/log/ecr.requirements.txt")
+energy_ca_requires = read_requirements("./ai-python/energy/ca.requirements.txt")
+energy_km_requires = read_requirements("./ai-python/energy/km.requirements.txt")
 
-test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
+gem_ent_requires = read_requirements("./ai-python/gem/ent.requirements.txt")
+gem_reco_requires = read_requirements("./ai-python/gem/reco.requirements.txt")
+
+fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
+retail_requires = read_requirements("./ai-python/retail/retail.requirements.txt")
+
+fsi_nlp_requires = read_requirements("./ai-python/fsi/nlp.requirements.txt")
+fsi_risk_requires = read_requirements("./ai-python/fsi/risk.requirements.txt")
+
+sc_ro_requires = read_requirements("./ai-python/sc/ro.requirements.txt")
+sc_ip_requires = read_requirements("./ai-python/sc/ip.requirements.txt")
+sc_ecr_requires = read_requirements("./ai-python/sc/ecr.requirements.txt")
+
+cdm_requires = read_requirements("./ai-python/cdm/cdm.requirements.txt")
+maro_requires = read_requirements("./ai-python/maro/maro.requirements.txt")
+
+all = (
+    core_requires
+    + test_requires
+    + msft_ama_requires + msft_utils_requires
+    + energy_ca_requires + energy_km_requires
+    + fclib_requires
+    + fsi_nlp_requires + fsi_risk_requires
+    + gem_ent_requires + gem_reco_requires
+    + retail_requires
+    + log_ecr_requires + log_ro_requires + log_ip_requires
+    + cdm_requires
+    + maro_requires    
+)
 
 extras = {
     "required": [],
-    "all": core_requires + fclib_requires + maro_requires + fsi_risk_requires + log_ro_requires + log_ip_requires + log_ecr_requires,
+    "all": all,
     "core": core_requires,
     "test": test_requires,
+    "ama": msft_ama_requires,
+    "msft-utils": msft_utils_requires,
+    "retail": retail_requires,
+    "energy": energy_ca_requires,
+    "energy-ca": energy_ca_requires,
+    "energy-km": energy_km_requires,
     "fclib": fclib_requires,
-    "ama": ama_requires,
-    "maro": maro_requires,
+    "fsi": fsi_risk_requires + fsi_nlp_requires,
+    "fsi-nlp": fsi_nlp_requires,
     "fsi-risk": fsi_risk_requires,
-    "log": log_ro_requires + log_ip_requires + log_ecr_requires,
-    "log-ro": log_ro_requires,
-    "log-ip": log_ip_requires,
-    "log-ecr": log_ecr_requires,
+    "gem": gem_ent_requires + gem_reco_requires,
+    "gem-ent": gem_ent_requires,
+    "gem-reco": gem_reco_requires, 
+    "sc": sc_ro_requires + sc_ip_requires + sc_ecr_requires,
+    "sc-ecr": sc_ecr_requires,
+    "sc-ip": sc_ip_requires,
+    "sc-ro": sc_ro_requires,
+    "cdm": cdm_requires,
+    "maro": maro_requires,
 }
 
 SETUP_REQUIRES = [
