@@ -18,7 +18,7 @@ def read_requirements(file_path):
     return io.open(file_path, encoding="utf-8").read()
 
 core_requires = read_requirements("./requirements.txt")
-test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
+test_requires = read_requirements("./test/requirements.txt")
 
 msft_ama_requires = read_requirements("./ai-python/msft/ama.requirements.txt")
 msft_utils_requires = read_requirements("./ai-python/msft/utils.requirements.txt")
