@@ -23,13 +23,15 @@ test_requires = read_requirements("./test/requirements.txt")
 msft_ama_requires = read_requirements("./ai-python/msft/ama.requirements.txt")
 msft_utils_requires = read_requirements("./ai-python/msft/utils.requirements.txt")
 
+fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
+reco_requires = read_requirements("./ai-python/msft/reco.requirements.txt")
+
 energy_ca_requires = read_requirements("./ai-python/energy/ca.requirements.txt")
 energy_km_requires = read_requirements("./ai-python/energy/km.requirements.txt")
 
 gem_ent_requires = read_requirements("./ai-python/gem/ent.requirements.txt")
 gem_reco_requires = read_requirements("./ai-python/gem/reco.requirements.txt")
 
-fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
 retail_requires = read_requirements("./ai-python/retail/retail.requirements.txt")
 
 fsi_nlp_requires = read_requirements("./ai-python/fsi/nlp.requirements.txt")
@@ -62,12 +64,13 @@ extras = {
     "core": core_requires,
     "test": test_requires,
     "ama": msft_ama_requires,
+    "fclib": fclib_requires,
+    "reco": reco_requires,
     "msft-utils": msft_utils_requires,
     "retail": retail_requires,
     "energy": energy_ca_requires,
     "energy-ca": energy_ca_requires,
     "energy-km": energy_km_requires,
-    "fclib": fclib_requires,
     "fsi": fsi_risk_requires + fsi_nlp_requires,
     "fsi-nlp": fsi_nlp_requires,
     "fsi-risk": fsi_risk_requires,
