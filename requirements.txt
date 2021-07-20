@@ -110,7 +110,7 @@ psycopg2==2.8.6
 pulp==2.4
 pyarrow>=1.0.1
 pydantic==1.7.4
-pykrige==1.5.1
+pykrige==1.6.0
 pyjwt==2.1.0
 pymaro==0.2.3a2
 pyodbc==4.0.31
