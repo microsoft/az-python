@@ -1,0 +1,8 @@
+azure-storage-file-datalake
+azureml-core
+commondatamodel-objectmodel
+recommenders
+pydantic==1.7.4
+pyspark==2.4.5
+python-dotenv==0.14.0
+requests
