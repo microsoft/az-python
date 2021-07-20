@@ -36,8 +36,8 @@ jobs:
         install_all="ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]"
         install_test="ai-python[test]"
 
-        cat install_all > core.in
-        cat install_test > test.in
+        echo "$install_all" > core.in
+        echo "$install_test" > test.in
 
         ./generate.sh -s .
 
