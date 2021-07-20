@@ -23,7 +23,7 @@ azure-storage-common==2.1.0
 azure-storage-file-datalake
 azure-storage-file==2.1.0
 azure-storage-nspkg==3.1.0
-azure-storage-queue==12.1.4
+azure-storage-queue==12.1.6
 azure-storage==0.36.0
 azure-ai-anomalydetector<=3.0.0b3
 azure-ai-metricsadvisor<=1.0.0b3
@@ -127,7 +127,7 @@ Pygments>=2.7.4
 pyyaml==5.4.1
 randomgen==1.19.3
 rasterio==1.2.1
-ray==1.1.0
+ray==1.4.1
 ray[rllib]==1.1.0
 recommenders<=0.6.0
 regex==2020.11.13
