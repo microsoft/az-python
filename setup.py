@@ -14,23 +14,35 @@ readme = io.open("./README.md", encoding="utf-8").read()
 
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
+def read_requirements(file_path):
+    return io.open(file_path, encoding="utf-8").read()
+
 core_requires = io.open("./requirements.txt", encoding="utf-8").read()
 ama_requires = io.open("./ama.requirements.txt", encoding="utf-8").read()
 fclib_requires = io.open("./fclib.requirements.txt", encoding="utf-8").read()
 maro_requires = io.open("./ai-python/maro/maro.requirements.txt", encoding="utf-8").read()
+
 fsi_risk_requires = io.open("./ai-python/fsi/risk.requirements.txt", encoding="utf-8").read()
+
+log_ro_requires = read_requirements("./ai-python/log/ro.requirements.txt")
+log_ip_requires = read_requirements("./ai-python/log/ip.requirements.txt")
+log_ecr_requires = read_requirements("./ai-python/log/ecr.requirements.txt")
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
 extras = {
     "required": [],
-    "all": core_requires + fclib_requires + maro_requires + fsi_risk_requires,
+    "all": core_requires + fclib_requires + maro_requires + fsi_risk_requires + log_ro_requires + log_ip_requires + log_ecr_requires,
     "core": core_requires,
     "test": test_requires,
     "fclib": fclib_requires,
     "ama": ama_requires,
     "maro": maro_requires,
-    "fsi-risk": fsi_risk_requires
+    "fsi-risk": fsi_risk_requires,
+    "log": log_ro_requires + log_ip_requires + log_ecr_requires,
+    "log-ro": log_ro_requires,
+    "log-ip": log_ip_requires,
+    "log-ecr": log_ecr_requires,
 }
 
 SETUP_REQUIRES = [

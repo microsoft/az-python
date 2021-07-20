@@ -5,3 +5,7 @@ include ama.requirements.txt
 
 include ai-python/maro/maro.requirements.txt
 include ai-python/fsi/risk.requirements.txt
+
+include ai-python/log/ip.requirements.txt
+include ai-python/log/ro.requirements.txt
+include ai-python/log/ecr.requirements.txt
