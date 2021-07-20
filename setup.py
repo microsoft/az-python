@@ -51,7 +51,7 @@ all = (
     + fsi_nlp_requires + fsi_risk_requires
     + gem_ent_requires + gem_reco_requires
     + retail_requires
-    + log_ecr_requires + log_ro_requires + log_ip_requires
+    + sc_ecr_requires + sc_ro_requires + sc_ip_requires
     + cdm_requires
     + maro_requires    
 )
