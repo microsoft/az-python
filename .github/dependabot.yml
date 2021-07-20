@@ -8,6 +8,7 @@ updates:
   open-pull-requests-limit: 10
   assignees:
   - dciborow
+  - mattchansky
   allow:
   - dependency-type: direct
   - dependency-type: indirect
