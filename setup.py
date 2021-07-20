@@ -26,9 +26,9 @@ fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
 
 fsi_risk_requires = read_requirements("./ai-python/fsi/risk.requirements.txt")
 
-log_ro_requires = read_requirements("./ai-python/log/ro.requirements.txt")
-log_ip_requires = read_requirements("./ai-python/log/ip.requirements.txt")
-log_ecr_requires = read_requirements("./ai-python/log/ecr.requirements.txt")
+sc_ro_requires = read_requirements("./ai-python/sc/ro.requirements.txt")
+sc_ip_requires = read_requirements("./ai-python/sc/ip.requirements.txt")
+sc_ecr_requires = read_requirements("./ai-python/sc/ecr.requirements.txt")
 
 test_requires = io.open("./test/requirements.txt", encoding="utf-8").read()
 
@@ -43,10 +43,10 @@ extras = {
     "fclib": fclib_requires,
     "fsi": fsi_risk_requires
     "fsi-risk": fsi_risk_requires,
-    "log": log_ro_requires + log_ip_requires + log_ecr_requires,
-    "log-ro": log_ro_requires,
-    "log-ip": log_ip_requires,
-    "log-ecr": log_ecr_requires,
+    "sc": sc_ro_requires + sc_ip_requires + sc_ecr_requires,
+    "sc-ro": sc_ro_requires,
+    "sc-ip": sc_ip_requires,
+    "sc-ecr": sc_ecr_requires,
 }
 
 SETUP_REQUIRES = [
