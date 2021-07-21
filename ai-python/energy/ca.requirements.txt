@@ -1,6 +1,6 @@
 azure-ai-anomalydetector<=3.0.0b3
 azure-core>=1.10.0
-azure-identity<1.5.0,>=1.4.1
+azure-identity>=1.4.1,<=1.6.0
 azure-keyvault>=4.1.0,<=4.3.0
 azure-storage-blob<13.0.0,>=12.7.1
 ciso8601==2.1.3
