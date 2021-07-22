@@ -18,6 +18,7 @@ torch==1.7.1
 nltk==3.5
 numpy>=1.18.5,<=1.19.5
 protobuf==3.14.0
+pyspark==2.4.5
 scipy==1.5.4
 sentencepiece==0.1.95
 seqeval==1.2.2
@@ -26,3 +27,4 @@ transformers==4.5.0
 tqdm==4.46.0
 typing==3.7.4.3; python_version < "3.6"
 uvicorn==0.12.2
+
