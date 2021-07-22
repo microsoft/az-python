@@ -8,7 +8,7 @@ Currently Python3.7 is supported.
 ### Ubuntu 18.04
 The aiubuntu library is provided to simplify installation of required Ubuntu dependancies.
 
-```shell
+shell
 
 add-apt-repository -y ppa:deadsnakes/ppa \
 && apt-get update \
@@ -29,7 +29,6 @@ python3.7 -m pip install ai-python[tests]
 
 # For Libraries needed for a single package
 python3.7 -m pip install ai-python[retail]
-```
 
 ## Contributing
 
