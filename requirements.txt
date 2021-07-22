@@ -12,7 +12,7 @@ azure-functions==1.3.0
 azure-identity
 azure-keyvault-secrets>=4.1.0,<=4.2.0
 azure-keyvault>=4.1.0,<=4.2.0
-azure-kusto-data
+azure-kusto-data==2.0.0
 azure-mgmt-compute
 azure-mgmt-deploymentmanager
 azure-mgmt-resource
