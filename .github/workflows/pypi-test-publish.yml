@@ -16,6 +16,27 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install setuptools wheel twine pip-tools
+
+        mv requirements.txt requirements.in
+        touch requirements.txt
+        echo "" >> requirements.in
+        cat requirements.linked.in >> requirements.in
+        pip-compile requirements.in
+
+        cd ai-python
+
+        requirements=$(find . -type f -name "*requirements*" | paste -sd " ")
+
+        for req in $requirements
+        do
+          mv $req temp.in
+          echo "-c ../requirements.txt" >> temp.in	
+          touch $req
+          pip-compile temp.in -o $req
+        done
+
+        cd ..
+
         python setup.py sdist bdist_wheel
 
     - name: Test dependencies
