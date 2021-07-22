@@ -17,7 +17,11 @@ add-apt-repository -y ppa:dciborow/ppa \
 curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
 && /usr/bin/python3.7 get-pip.py 'pip==20.3.3'
 
+# For Core Libaries (this will install nearly everything) 
 python3.7 -m pip install ai-python[core]
+
+# For Libraries needed for testing
+python3.7 -m pip install ai-python[tests]
 ```
 
 ## Contributing
