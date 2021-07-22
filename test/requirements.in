@@ -1,6 +1,6 @@
 azureml-contrib-reinforcementlearning==1.32.0
 bandit==1.6.2
-black==19.10b0
+black==21.7b0
 check-manifest==0.45
 cython==0.29.24
 flake8-bugbear==21.4.3
