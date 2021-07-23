@@ -1,4 +1,4 @@
-azureml-core>=1.21.0.post2
+azureml-core==1.32.0
 azure-identity>=1.4.1
 azure-keyvault==4.1.0
 msrestazure>=0.6.4
