@@ -49,3 +49,9 @@ jobs:
         user: __token__
         password: ${{ secrets.TEST_PYPI_PASSWORD }}
         repository_url: https://test.pypi.org/legacy/
+    - name: Install dependencies
+      run: |
+        python3.7 -m pip install --upgrade pip
+        python3.7 -m pip install virtualenv pip-tools
+        pip-compile --extra-index-url https://test.pypi.org/simple
+          ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]
