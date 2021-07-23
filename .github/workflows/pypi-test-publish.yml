@@ -18,9 +18,6 @@ jobs:
         && sudo apt install -y \
           gdal-bin libgdal-dev
 
-    - name: Pin dependencies
-      run: |
-        python --version
         mv requirements.txt requirements.in
         touch requirements.txt
         echo "" >> requirements.in
