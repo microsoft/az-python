@@ -55,5 +55,6 @@ jobs:
         method: 'POST'
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
+        continue-on-error: true
         data: '{"targetRefName": "refs/heads/master", "sourceRefName": "refs/heads/dciborow/updateContainer", "title": "Dependancy Update", "autoCompleteSetBy": "dciborow@microsoft.com"}'
         ignoreStatusCode: '409'
