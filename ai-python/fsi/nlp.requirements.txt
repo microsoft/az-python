@@ -4,10 +4,10 @@ azure-functions==1.3.0
 azure-ai-formrecognizer==3.1.1
 azure-cognitiveservices-vision-computervision==0.8.0
 azure-storage-blob<13.0.0>=12.6.0
-azureml-core>=1.21.0.post2
-azureml-defaults>=1.21.0
-azureml-pipeline>=1.21.0
-azureml-train>=1.21.0
+azureml-core==1.32.0
+azureml-defaults==1.32.0
+azureml-pipeline==1.32.0
+azureml-train==1.32.0
 datasets==1.3.0
 dateparser==0.7.6
 fastapi==0.65.2
