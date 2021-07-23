@@ -25,8 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Bump version
-        uses: remorses/bump-version@js
+      - name: Git Version
+        uses: codacy/git-version@2.4.0
         with:
-            version_file: ./VERSION
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+          release-branch: main
+      - name: Echo Version
+        run: |
+          version=$(./git-version)
+          echo "version = $version"
