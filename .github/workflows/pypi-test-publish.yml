@@ -33,7 +33,7 @@ jobs:
           mv $req temp.in
           echo "-c ../requirements.txt" >> temp.in	
           touch $req
-          python -m pip-compile temp.in -o $req
+          pip-compile temp.in -o $req
         done
 
         cd ..
