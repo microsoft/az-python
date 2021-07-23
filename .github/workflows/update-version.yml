@@ -29,3 +29,4 @@ jobs:
         uses: remorses/bump-version@js
         with:
             version_file: ./VERSION
+            github_token: ${{ secrets.GITHUB_TOKEN }}
