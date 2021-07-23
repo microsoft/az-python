@@ -47,7 +47,8 @@ jobs:
         git add -A
         git commit -m "Updating Container"
         
-        if git rev-parse --quiet --verify dciborow/updateContainer > /dev/null; then
+        if git rev-parse --quiet --verify dciborow/updateContainer > /dev/null; then/
+          git fetch
           git merge -X ours dciborow/updateContainer
         fi
 
