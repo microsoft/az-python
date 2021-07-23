@@ -31,5 +31,4 @@ jobs:
           release-branch: main
       - name: Echo Version
         run: |
-          version=$(./git-version)
           echo "version = $version"
