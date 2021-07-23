@@ -22,7 +22,7 @@ jobs:
         touch requirements.txt
         echo "" >> requirements.in
         cat requirements.linked.in >> requirements.in
-        python -m pip-compile -v requirements.in
+        pip-compile -v requirements.in
 
         cd ai-python
 
