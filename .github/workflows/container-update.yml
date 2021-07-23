@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -30,7 +31,7 @@ jobs:
     - name: Update dependencies
       run: |
         version=$(cat ./VERSION)
-
+        cd ..
         git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
         cd CDPX-Linux-Images
 
