@@ -1,5 +1,5 @@
 azure-storage-file-datalake
-azureml-core
+azureml-core==1.32.0
 commondatamodel-objectmodel
 recommenders
 pydantic==1.7.4
