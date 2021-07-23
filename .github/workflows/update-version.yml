@@ -22,10 +22,3 @@ jobs:
       with:
           version_file: ./VERSION
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          - name: Git Version
-        uses: codacy/git-version@2.4.0
-        with:
-          release-branch: main
-      - name: Echo Version
-        run: |
-          echo "version = $VERSION"
