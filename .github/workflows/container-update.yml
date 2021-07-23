@@ -46,6 +46,10 @@ jobs:
 
         git add -A
         git commit -m "Updating Container"
+        
+        if git rev-parse --quiet --verify dciborow/updateContainer > /dev/null; then
+          git merge -X ours dciborow/updateContainer
+        fi
 
         git push origin --force master:dciborow/updateContainer
     - name: HTTP Request Action
