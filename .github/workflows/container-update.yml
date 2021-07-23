@@ -29,13 +29,15 @@ jobs:
           gdal-bin libgdal-dev
     - name: Update dependencies
       run: |
+        version=$(cat ./VERSION)
+
         git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
         cd CDPX-Linux-Images
 
         cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
         
-        install_all="ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]"
-        install_test="ai-python[test]"
+        install_all="ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]==$version"
+        install_test="ai-python[test]==$version"
 
         echo "$install_all" > core.in
         echo "$install_test" > test.in
