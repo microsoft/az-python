@@ -151,7 +151,7 @@ torch==1.7.1
 torchvision==0.8.2
 tk
 tqdm==4.46.0
-transformers==4.5.0
+transformers==4.9.0
 urllib3>=1.26.5
 utm==0.6.0
 uvicorn==0.12.2
