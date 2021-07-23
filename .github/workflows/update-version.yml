@@ -35,4 +35,4 @@ jobs:
           release-branch: main
       - name: Echo Version
         run: |
-          echo "version = $version"
+          echo "version = $VERSION"
