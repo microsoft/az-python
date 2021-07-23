@@ -46,7 +46,6 @@ maro_requires = read_requirements("./ai-python/maro/maro.requirements.txt")
 
 all = (
     core_requires
-    + test_requires
     + msft_ama_requires + msft_utils_requires
     + energy_ca_requires + energy_km_requires
     + fclib_requires
