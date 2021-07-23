@@ -12,6 +12,8 @@ from distutils.core import setup
 
 readme = io.open("./README.md", encoding="utf-8").read()
 
+version = io.open("./VERSION", encoding="utf-8").read()
+
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
 def read_requirements(file_path):
@@ -95,7 +97,7 @@ SETUP_REQUIRES = [
 
 setup(
     name="ai-python",
-    version="0.3.15",
+    version=version,
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
