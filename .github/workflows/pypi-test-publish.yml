@@ -9,7 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        python-version: '3.7'
+            python-version: '3.7'
+    - name: Setup Python
+      uses: actions/setup-python@v2.2.2
+      with:
+        python-version: 3.7    
     - name: Install dependencies
       run: |
         python3.7 -m pip install --upgrade pip
@@ -39,8 +43,6 @@ jobs:
         cd ..
 
         python setup.py sdist bdist_wheel
-      with:
-        python-version: '3.7'
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
