@@ -39,7 +39,8 @@ jobs:
         cd ..
 
         python setup.py sdist bdist_wheel
-
+      with:
+        python-version: '3.7'
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
