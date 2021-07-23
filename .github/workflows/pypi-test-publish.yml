@@ -20,11 +20,12 @@ jobs:
 
     - name: Pin dependencies
       run: |
+        python --version
         mv requirements.txt requirements.in
         touch requirements.txt
         echo "" >> requirements.in
         cat requirements.linked.in >> requirements.in
-        pip-compile requirements.in
+        python -m pip-compile -v requirements.in
 
         cd ai-python
 
@@ -35,7 +36,7 @@ jobs:
           mv $req temp.in
           echo "-c ../requirements.txt" >> temp.in	
           touch $req
-          pip-compile temp.in -o $req
+          python -m pip-compile temp.in -o $req
         done
 
         cd ..
