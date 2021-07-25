@@ -1,4 +1,4 @@
-VERSION
+include VERSION
 
 include requirements.txt
 include test/requirements.txt
