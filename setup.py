@@ -78,7 +78,11 @@ extras = {
     "gem": gem_ent_requires + gem_reco_requires,
     "gem-ent": gem_ent_requires,
     "gem-reco": gem_reco_requires, 
-    "sc": sc_ro_requires + sc_ip_requires + sc_ecr_requires,
+    "sc": """
+    ai-python[sc-ecr]
+    ai-python[sc-ip]
+    ai-python[sc-ro]
+    """
     "sc-ecr": sc_ecr_requires,
     "sc-ip": sc_ip_requires,
     "sc-ro": sc_ro_requires,
