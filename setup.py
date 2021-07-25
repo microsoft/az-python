@@ -87,7 +87,7 @@ extras = {
 }
 
 
-SETUP_REQUIRES = read_requirements("./pip-tools.txt")
+SETUP_REQUIRES = read_requirements("./piptools.txt")
 
 
 setup(
