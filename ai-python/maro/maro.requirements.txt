@@ -1,4 +1,4 @@
-numpy<1.20.0
+numpy==1.19.5
 torch<1.8.0
 holidays>=0.10.3
 pyaml>=20.4.0
