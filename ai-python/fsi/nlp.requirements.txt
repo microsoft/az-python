@@ -16,7 +16,7 @@ pyodbc==4.0.31
 python-dotenv==0.14.0
 torch==1.7.1
 nltk==3.5
-numpy>=1.18.5,<=1.19.5
+numpy==1.19.5
 protobuf==3.14.0
 scipy==1.5.4
 sentencepiece==0.1.95
