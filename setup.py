@@ -87,9 +87,6 @@ extras = {
 }
 
 
-SETUP_REQUIRES = read_requirements("./piptools.txt")
-
-
 setup(
     name="ai-python",
     version=version,
@@ -120,7 +117,6 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
-    setup_requires=SETUP_REQUIRES,
     extras_require=extras,
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,
