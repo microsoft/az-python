@@ -1,8 +1,8 @@
 azure-identity
 azure-storage-file-datalake
-azureml-core
+azureml-core==1.32.0
 commondatamodel-objectmodel
 recommenders
-pydantic
-pyspark~=2.4.0
-python-dotenv
+pydantic==1.7.4
+pyspark==2.4.5
+python-dotenv==0.14.0
