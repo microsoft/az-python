@@ -22,6 +22,7 @@ pathtools
 Pillow>=6.2
 pip>=20.3.3
 pydantic==1.7.4
+pyspark>-2.4.0
 python-dateutil>=2.1
 pyyaml==5.4.1
 requests==2.26.0
