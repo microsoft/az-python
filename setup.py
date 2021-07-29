@@ -34,7 +34,7 @@ energy_km_requires = read_requirements("./ai-python/energy/km.requirements.txt")
 gem_ent_requires = read_requirements("./ai-python/gem/ent.requirements.txt")
 gem_reco_requires = read_requirements("./ai-python/gem/reco.requirements.txt")
 
-retail_requires = read_requirements("./ai-python/retail/retail.requirements.txt")
+retail_requires = read_requirements("./ai-python/retail/requirements.txt")
 
 fsi_nlp_requires = read_requirements("./ai-python/fsi/nlp.requirements.txt")
 fsi_risk_requires = read_requirements("./ai-python/fsi/risk.requirements.txt")
