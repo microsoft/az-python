@@ -42,7 +42,7 @@ extends:
           ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
         steps:
         - checkout: self
-        - checkout: industrialai
+#         - checkout: industrialai
 
         - template: .ci/steps/python_ai_test.yml@microsoftai
 
