@@ -45,6 +45,8 @@ extends:
 #         - checkout: industrialai
 
         - template: .ci/steps/python_ai_test.yml@microsoftai
+          parameters:
+            SrcRoot: $(System.DefaultWorkingDirectory)/AGAI-Industrial-AI/src
 
       - job: package_scanning
         container: $[variables.LinuxContainerImage]
@@ -55,4 +57,4 @@ extends:
         steps:
         - template: .ci/steps/python_ai_safety.yml@microsoftai
           parameters:
-            SrcRoot: $(System.DefaultWorkingDirectory)/src
+            SrcRoot: $(System.DefaultWorkingDirectory)/AGAI-Industrial-AI/src
