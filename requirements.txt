@@ -20,7 +20,7 @@ azure-search-documents==11.1.0b3
 azure-servicebus==0.50.3
 azure-storage-blob<13.0.0,>=12.6.0
 azure-storage-common==2.1.0
-azure-storage-file-datalake
+azure-storage-file-datalake==12.3.1
 azure-storage-file==2.1.0
 azure-storage-nspkg==3.1.0
 azure-storage-queue==12.1.6
