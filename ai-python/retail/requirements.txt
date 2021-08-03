@@ -1,5 +1,5 @@
 azure-identity
-azure-storage-file-datalake
+azure-storage-file-datalake==12.3.1
 azureml-core==1.32.0
 commondatamodel-objectmodel
 recommenders
