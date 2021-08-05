@@ -19,7 +19,7 @@ resources:
     - repository: microsoftai
       type: git
       name: one/AGAI-Industrial-CICD
-      ref: refs/heads/release/eap_alpha_5
+      ref: refs/heads/release/beta-1
     - repository: industrialai
       type: git
       name: one/AGAI-Industrial-AI
@@ -41,9 +41,12 @@ extends:
         variables: # More settings at https://aka.ms/obpipelines/yaml/jobs
           ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
         steps:
+        - checkout: self
         - checkout: industrialai
 
         - template: .ci/steps/python_ai_test.yml@microsoftai
+          parameters:
+            SrcRoot: $(System.DefaultWorkingDirectory)/AGAI-Industrial-AI/src
 
       - job: package_scanning
         container: $[variables.LinuxContainerImage]
@@ -53,3 +56,5 @@ extends:
           ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
         steps:
         - template: .ci/steps/python_ai_safety.yml@microsoftai
+          parameters:
+            SrcRoot: $(System.DefaultWorkingDirectory)/AGAI-Industrial-AI/src

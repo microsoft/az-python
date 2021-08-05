@@ -1,0 +1,8 @@
+dateparser==0.7.6
+fastapi==0.65.2
+python-dotenv==0.14.0
+requests==2.26.0
+spacy==3.0.4
+uvicorn==0.12.2
+wget==3.2
+validators

@@ -66,7 +66,7 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
 
-    - name: Python Safety Check
-      uses: aufdenpunkt/python-safety-check@v1.0.5
-      with:
-        scan_requirements_file_only: 'true'
+#     - name: Python Safety Check
+#       uses: aufdenpunkt/python-safety-check@v1.0.5
+#       with:
+#         scan_requirements_file_only: 'true'

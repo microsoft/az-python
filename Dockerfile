@@ -102,7 +102,7 @@ RUN python3.7 -m pip download \
     && /devopsVirtualEnv/bin/python -m pip install \
         --find-links "/source/packages/pywheel" \
         --upgrade \
-        pip setuptools cython flit pytoml\
+        pip setuptools cython flit pytoml poetry \
     && /devopsVirtualEnv/bin/python -m pip install \
         --find-links "/source/packages/pywheel" \
         --upgrade \

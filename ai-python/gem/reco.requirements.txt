@@ -1,0 +1,7 @@
+azure-cosmosdb-table>=1.0.6,<2.0.0
+azure-kusto-data==2.0.0
+azure-storage-blob>=12.6.0,<13.0.0
+azureml-core==1.32.0
+playfab==0.0.200914
+python-dotenv>=0.14.0,<=0.14.0
+pyspark>=2.4.0,<3.0.0

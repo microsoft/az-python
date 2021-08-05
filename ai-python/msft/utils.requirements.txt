@@ -1,0 +1,6 @@
+azureml-core==1.32.0
+azure-identity>=1.4.1
+azure-keyvault==4.1.0
+msrestazure>=0.6.4
+azure-mgmt-resource>=12.1.0
+python-dotenv>=0.14.0,<=0.14.0
