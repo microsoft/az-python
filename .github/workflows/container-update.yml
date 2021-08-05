@@ -13,7 +13,9 @@ on:
 jobs:
   update_container:
     runs-on: ubuntu-latest
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -28,13 +30,15 @@ jobs:
           gdal-bin libgdal-dev
     - name: Update dependencies
       run: |
+        version=$(cat ./VERSION)
+        cd ..
         git clone https://${{ secrets.ADO_USER }}:${{ secrets.ADO_PASSWORD }}@cloudes.visualstudio.com/CDPX/_git/CDPX-Linux-Images
         cd CDPX-Linux-Images
 
         cd src/user/agai/agai-template-ubuntu-1804/latest/requirements
         
-        install_all="ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]"
-        install_test="ai-python[test]"
+        install_all="ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]==$version"
+        install_test="ai-python[test]==$version"
 
         echo "$install_all" > core.in
         echo "$install_test" > test.in
@@ -46,14 +50,20 @@ jobs:
 
         git add -A
         git commit -m "Updating Container"
+        
+        if git rev-parse --quiet --verify dciborow/updateContainer > /dev/null; then
+          git fetch
+          git merge -X ours dciborow/updateContainer
+        fi
 
         git push origin --force master:dciborow/updateContainer
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
+      continue-on-error: true
       with:
         url: 'https://cloudes.visualstudio.com/CDPX/_apis/git/repositories/CDPX-Linux-Images/pullrequests?api-version=6.0'
         method: 'POST'
         username: "dciborow"
         password: ${{ secrets.ADO_PAT }}
         data: '{"targetRefName": "refs/heads/master", "sourceRefName": "refs/heads/dciborow/updateContainer", "title": "Dependancy Update", "autoCompleteSetBy": "dciborow@microsoft.com"}'
-        ignoreStatusCode: '409'
+        ignoreStatusCodes: '409'

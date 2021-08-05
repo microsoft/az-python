@@ -12,6 +12,8 @@ from distutils.core import setup
 
 readme = io.open("./README.md", encoding="utf-8").read()
 
+version = io.open("./VERSION", encoding="utf-8").read()
+
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
 def read_requirements(file_path):
@@ -46,7 +48,6 @@ maro_requires = read_requirements("./ai-python/maro/maro.requirements.txt")
 
 all = (
     core_requires
-    + test_requires
     + msft_ama_requires + msft_utils_requires
     + energy_ca_requires + energy_km_requires
     + fclib_requires
@@ -85,18 +86,10 @@ extras = {
     "maro": maro_requires,
 }
 
-SETUP_REQUIRES = [
-    "jupyter-packaging==0.7.12",
-    "numpy==1.19.5",
-    "pip-tools==5.5.0",
-    "scikit-build==0.11.1",
-    "scipy==1.4.1",
-]
-
 
 setup(
     name="ai-python",
-    version="0.3.1",
+    version=version,
     description="Microsoft AI Python Package",
     long_description=readme,
     long_description_content_type="text/x-rst",
@@ -124,7 +117,6 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
     python_requires=">=3.7,<3.8",
-    setup_requires=SETUP_REQUIRES,
     extras_require=extras,
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,

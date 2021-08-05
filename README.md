@@ -9,15 +9,26 @@ Currently Python3.7 is supported.
 The aiubuntu library is provided to simplify installation of required Ubuntu dependancies.
 
 shell
-add-apt-repository -y ppa:dciborow/ppa \
-&& add-apt-repository -y ppa:deadsnakes/ppa \
+
+add-apt-repository -y ppa:deadsnakes/ppa \
 && apt-get update \
-&& apt-get install -y aiubuntu python3.7 python3.7-dev
+&& apt-get install -y python3.7 python3.7-dev
 
 curl -fSsLO https://bootstrap.pypa.io/get-pip.py \
 && /usr/bin/python3.7 get-pip.py 'pip==20.3.3'
 
+add-apt-repository -y ppa:dciborow/ppa \
+&& apt-get update \
+&& apt-get install -y aiubuntu
+
+# For Core Libaries (this will install nearly everything) 
 python3.7 -m pip install ai-python[core]
+
+# For Libraries needed for testing
+python3.7 -m pip install ai-python[tests]
+
+# For Libraries needed for a single package
+python3.7 -m pip install ai-python[retail]
 
 ## Contributing
 
