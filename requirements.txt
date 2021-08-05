@@ -154,7 +154,7 @@ tqdm==4.46.0
 transformers==4.9.0
 urllib3>=1.26.5
 utm==0.6.0
-uvicorn==0.12.2
+uvicorn==0.14.0
 validators==0.18.2
 Werkzeug==1.0.1
 wget==3.2
