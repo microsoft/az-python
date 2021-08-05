@@ -1,0 +1,17 @@
+-c ./ai-python/retail/fclib.requirements.txt
+-c ./ai-python/retail/retail.requirements.txt
+-c ./ai-python/cdm/cdm.requirements.txt
+-c ./ai-python/energy/km.requirements.txt
+-c ./ai-python/energy/ca.requirements.txt
+-c ./ai-python/fsi/nlp.requirements.txt
+-c ./ai-python/fsi/risk.requirements.txt
+-c ./ai-python/gem/ent.requirements.txt
+-c ./ai-python/gem/reco.requirements.txt
+-c ./ai-python/maro/maro.requirements.txt
+-c ./ai-python/msft/ama.requirements.txt
+-c ./ai-python/msft/reco.requirements.txt
+-c ./ai-python/msft/utils.requirements.txt
+-c ./ai-python/sc/ecr.requirements.txt
+-c ./ai-python/sc/ip.requirements.txt
+-c ./ai-python/sc/ro.requirements.txt
+
