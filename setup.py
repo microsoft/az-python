@@ -22,29 +22,29 @@ def read_requirements(file_path):
 core_requires = read_requirements("./requirements.txt")
 test_requires = read_requirements("./test/requirements.txt")
 
-msft_ama_requires = read_requirements("./ai-python/msft/ama.requirements.txt")
-msft_utils_requires = read_requirements("./ai-python/msft/utils.requirements.txt")
+msft_ama_requires = read_requirements(".depends/msft.ama.requirements.txt")
+msft_utils_requires = read_requirements(".depends/msft.utils.requirements.txt")
 
-fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
-reco_requires = read_requirements("./ai-python/msft/reco.requirements.txt")
+fclib_requires = read_requirements(".depends/re.fclib.requirements.txt")
+reco_requires = read_requirements(".depends/msft.reco.requirements.txt")
 
 energy_ca_requires = read_requirements("./.depends/en.ca.requirements.txt")
 energy_km_requires = read_requirements("./.depends/en.km.requirements.txt")
 
-gem_ent_requires = read_requirements("./ai-python/gem/ent.requirements.txt")
-gem_reco_requires = read_requirements("./ai-python/gem/reco.requirements.txt")
+gem_ent_requires = read_requirements(".depends/gem.ent.requirements.txt")
+gem_reco_requires = read_requirements(".depends/gem.reco.requirements.txt")
 
-retail_requires = read_requirements("./ai-python/retail/retail.requirements.txt")
+retail_requires = read_requirements(".depends/re.retail.requirements.txt")
 
 fsi_nlp_requires = read_requirements("./ai-python/fsi/nlp.requirements.txt")
-fsi_risk_requires = read_requirements("./ai-python/fsi/risk.requirements.txt")
+fsi_risk_requires = read_requirements(".depends/fsi.risk.requirements.txt")
 
-sc_ro_requires = read_requirements("./ai-python/sc/ro.requirements.txt")
-sc_ip_requires = read_requirements("./ai-python/sc/ip.requirements.txt")
-sc_ecr_requires = read_requirements("./ai-python/sc/ecr.requirements.txt")
+sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
+sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
+sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
 
 cdm_requires = read_requirements("./ai-python/cdm/cdm.requirements.txt")
-maro_requires = read_requirements("./ai-python/maro/maro.requirements.txt")
+maro_requires = read_requirements(".depends/maro.maro.requirements.txt")
 
 all = (
     core_requires
