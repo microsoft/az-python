@@ -45,7 +45,7 @@ cryptography>=3.3,<=3.4.7
 cvxopt>=1.2.6
 cvxpy>=1.1.10
 cycler>=0.10.0
-databricks-cli==0.14.1
+databricks-cli==0.14.3
 datasets==1.10.2
 dateparser==0.7.6
 descartes==1.1.0
