@@ -28,8 +28,8 @@ msft_utils_requires = read_requirements("./ai-python/msft/utils.requirements.txt
 fclib_requires = read_requirements("./ai-python/retail/fclib.requirements.txt")
 reco_requires = read_requirements("./ai-python/msft/reco.requirements.txt")
 
-energy_ca_requires = read_requirements("./ai-python/energy/ca.requirements.txt")
-energy_km_requires = read_requirements("./ai-python/energy/km.requirements.txt")
+energy_ca_requires = read_requirements("./.depends/en.ca.requirements.txt")
+energy_km_requires = read_requirements("./.depends/en.km.requirements.txt")
 
 gem_ent_requires = read_requirements("./ai-python/gem/ent.requirements.txt")
 gem_reco_requires = read_requirements("./ai-python/gem/reco.requirements.txt")
