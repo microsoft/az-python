@@ -12,3 +12,15 @@ updates:
   allow:
   - dependency-type: direct
   - dependency-type: indirect
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 100
+  assignees:
+  - dciborow
+  - mattchansky
+  allow:
+  - dependency-type: direct
+  - dependency-type: indirect

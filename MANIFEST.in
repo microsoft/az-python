@@ -4,4 +4,4 @@ include piptools.txt
 include requirements.txt
 include test/requirements.txt
 
-recursive-include ai-python/ *.txt
+recursive-include .depends/ *.txt
