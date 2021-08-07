@@ -111,7 +111,7 @@ RUN python3.7 -m pip download \
 # -----------------------------------------------------------------#
 # Download and Install Test Dependancies
 # -----------------------------------------------------------------#
-COPY test/requirements.txt /tmp/requirements/test/
+COPY .depends/test.requirements.txt /tmp/requirements/test/
 
 RUN python3.7 -m pip download \
         -d "/source/packages/pywheel" \

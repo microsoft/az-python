@@ -20,7 +20,7 @@ def read_requirements(file_path):
     return io.open(file_path, encoding="utf-8").read()
 
 core_requires = read_requirements(".depends/requirements.txt")
-test_requires = read_requirements("./test/requirements.txt")
+test_requires = read_requirements(".depends/test.requirements.txt")
 
 msft_ama_requires = read_requirements(".depends/msft.ama.requirements.txt")
 msft_utils_requires = read_requirements(".depends/msft.utils.requirements.txt")
@@ -43,7 +43,7 @@ sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
 sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
 sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
 
-cdm_requires = read_requirements(".depends/cdm.cdm.requirements.txt")
+cdm_requires = read_requirements(".depends/cdm.cdm.test.requirements.txt")
 maro_requires = read_requirements(".depends/maro.maro.requirements.txt")
 
 all = (
