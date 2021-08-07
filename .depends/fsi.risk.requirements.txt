@@ -6,7 +6,7 @@ dateparser==0.7.6
 eli5>=0.10.0,<=0.11.0
 fairlearn==0.5.0
 fastapi==0.65.2
-interpret-core==0.2.0
+interpret-core==0.2.6
 lightgbm==2.3.0
 matplotlib>=2.2.5,<=3.4.2
 numpy==1.19.5
