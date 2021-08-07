@@ -125,7 +125,7 @@ RUN python3.7 -m pip download \
 # -----------------------------------------------------------------#
 # Download and Install Runtime Dependancies
 # -----------------------------------------------------------------#
-COPY requirements.txt /tmp/requirements/
+COPY .depends/requirements.txt /tmp/requirements/
 
 RUN python3.7 -m pip download \
         -d "/source/packages/pywheel" \

@@ -19,7 +19,7 @@ setuptools = "setuptools>=54.2.0,<=54.2.0"
 def read_requirements(file_path):
     return io.open(file_path, encoding="utf-8").read()
 
-core_requires = read_requirements("./requirements.txt")
+core_requires = read_requirements(".depends/requirements.txt")
 test_requires = read_requirements("./test/requirements.txt")
 
 msft_ama_requires = read_requirements(".depends/msft.ama.requirements.txt")
