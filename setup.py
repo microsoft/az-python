@@ -43,7 +43,7 @@ sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
 sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
 sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
 
-cdm_requires = read_requirements(".depends/cdm.cdm.test.requirements.txt")
+cdm_requires = read_requirements(".depends/cdm.cdm.requirements.txt")
 maro_requires = read_requirements(".depends/maro.maro.requirements.txt")
 
 all = (
