@@ -1,4 +1,4 @@
-attrs==19.3.0
+attrs==21.2.0
 azureml-contrib-reinforcementlearning>=1.21.0
 bandit==1.6.2
 black==19.10b0
