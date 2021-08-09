@@ -13,7 +13,7 @@ flit-core==2.3.0
 flit==3.2.0
 ipykernel
 ipyleaflet<0.15.0
-junit-xml==1.8
+junit-xml==1.9
 jupyter-packaging<0.8
 lxml>=4.6.2
 mock==4.0.2
