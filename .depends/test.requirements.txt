@@ -9,7 +9,7 @@ flake8-bugbear==21.4.3
 flake8-docstrings
 flake8-formatter_junit_xml
 flake8==3.9.2
-flit-core==2.3.0
+flit-core==3.3.0
 flit==3.2.0
 ipykernel
 ipyleaflet<0.15.0
