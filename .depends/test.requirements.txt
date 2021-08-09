@@ -25,7 +25,7 @@ pbr==5.4.5
 pre-commit==2.8.2
 pylint>=2.7.0
 pylint_junit
-pytest-cov==2.7.1
+pytest-cov==2.12.1
 pytest-mock<=3.6.1
 pytest-runner
 pytest==6.2.1
