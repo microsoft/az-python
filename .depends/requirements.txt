@@ -104,7 +104,7 @@ pkgconfig
 playfab==0.0.200914
 plotly>=4.14.3
 pluggy==0.13.1
-preshed==3.0.4
+preshed==3.0.5
 protobuf==3.14.0
 psycopg2==2.8.6
 pulp==2.4
