@@ -17,7 +17,7 @@ junit-xml==1.8
 jupyter-packaging<0.8
 lxml>=4.6.2
 mock==4.0.2
-mypy==0.720
+mypy==0.910
 numpy==1.19.5
 papermill==2.3.3
 pathlib2>=2.2.0
