@@ -38,7 +38,7 @@ cached-property==1.5.2
 chardet
 ciso8601==2.2.0
 click==7.1.2
-commondatamodel-objectmodel==1.2.3
+commondatamodel-objectmodel==1.3.0
 cornac==1.7.1
 cppy==1.1.0
 cryptography>=3.3,<=3.4.7
