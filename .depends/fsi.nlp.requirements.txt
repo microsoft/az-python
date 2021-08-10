@@ -19,7 +19,7 @@ nltk==3.6.2
 numpy==1.19.5
 protobuf==3.17.3
 scipy==1.5.4
-sentencepiece==0.1.95
+sentencepiece==0.1.96
 seqeval==1.2.2
 scikit-learn==0.24.2
 transformers==4.9.0
