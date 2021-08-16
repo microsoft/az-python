@@ -25,4 +25,4 @@ scikit-learn==0.24.2
 transformers==4.9.0
 tqdm==4.62.0
 typing==3.7.4.3; python_version < "3.6"
-uvicorn==0.14.0
+uvicorn==0.15.0

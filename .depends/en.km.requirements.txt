@@ -31,4 +31,4 @@ torchvision==0.8.2
 tqdm==4.62.0
 transformers==4.9.0
 utm==0.7.0
-uvicorn==0.14.0
+uvicorn==0.15.0
