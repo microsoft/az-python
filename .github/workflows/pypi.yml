@@ -37,7 +37,7 @@ jobs:
           pip-compile temp.in -o $req
         done
         cd ..
-        mv requirements.txt ./depends/requirements.txt
+        mv requirements.txt ./.depends/requirements.txt
         python setup.py sdist bdist_wheel
 
     - name: Publish package
