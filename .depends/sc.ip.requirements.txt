@@ -1,5 +1,6 @@
 cvxopt>=1.2.6
 cvxpy>=1.1.10
+holidays>=0.10.3
 matplotlib>=2.2.5
 numpy==1.19.5
 pandas==1.1.3
