@@ -12,7 +12,7 @@ datasets==1.11.0
 dateparser==1.0.0
 fastapi==0.65.2
 pandas==1.1.3
-pyodbc==4.0.31
+pyodbc==4.0.32
 python-dotenv==0.19.0
 torch==1.7.1
 nltk==3.6.2
