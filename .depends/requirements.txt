@@ -112,7 +112,7 @@ pyarrow>=1.0.1
 pydantic==1.7.4
 pykrige==1.6.0
 pyjwt==2.1.0
-pymaro==0.2.3a2
+pymaro==0.2.3a3
 pyodbc==4.0.32
 pypandoc==1.6.3
 pyparsing>=2.0.3
