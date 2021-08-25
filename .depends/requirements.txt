@@ -58,7 +58,7 @@ feedparser==5.2.1
 Flask-Login==0.5.0
 flask>=1.0.3,<1.1.5
 GDAL==2.4.2
-GeoAlchemy2==0.9.3
+GeoAlchemy2==0.9.4
 geopandas==0.8.2
 gym>=0.15.6
 h5py
@@ -74,7 +74,6 @@ keplergl==0.3.0
 kiwisolver>=1.0.0
 lasio==0.25.0
 lightgbm==2.3.0
-llvmlite==0.35.0
 lxml>=4.6.3
 MarkupSafe==1.1.1
 matplotlib
