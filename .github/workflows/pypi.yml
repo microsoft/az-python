@@ -31,6 +31,7 @@ jobs:
         requirements=$(find . -type f -name "*.requirements*" | paste -sd " ")
         for req in $requirements
         do
+          echo "Solving for Requirements : $req"
           mv $req temp.in
           echo "-c ../requirements.txt" >> temp.in	
           touch $req
