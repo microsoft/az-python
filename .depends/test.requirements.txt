@@ -23,7 +23,7 @@ papermill==2.3.3
 pathlib2>=2.2.0
 pbr==5.6.0
 pre-commit==2.8.2
-pylint>=2.7.0
+pylint==2.9.5
 pylint_junit
 pytest-cov==2.12.1
 pytest-mock<=3.6.1
