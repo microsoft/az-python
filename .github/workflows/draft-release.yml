@@ -17,5 +17,5 @@ jobs:
       - name: Publish release drafts
         uses: test-room-7/action-publish-release-drafts@v0.1.1
         with:
-          # Tag name
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           tag-name: ${{ steps.get-version.outputs.VERSION }}
