@@ -1,0 +1,21 @@
+name: Create Draft Release on Version Update
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'VERSION'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get version from ref
+        id: get-version
+        run: echo ::set-output name=VERSION::$(cat VERSION)
+      - name: Publish release drafts
+        uses: test-room-7/action-publish-release-drafts@v0.1.1
+        with:
+          # Tag name
+          tag-name: ${{ steps.get-version.outputs.VERSION }}
