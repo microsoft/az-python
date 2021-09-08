@@ -18,11 +18,12 @@ torch==1.7.1
 nltk==3.6.2
 numpy==1.19.5
 protobuf==3.17.3
+py-rouge==1.1
 scipy==1.5.4
 sentencepiece==0.1.96
 seqeval==1.2.2
 scikit-learn==0.24.2
-transformers==4.9.0
+transformers==4.10.0
 tqdm==4.62.2
 typing==3.7.4.3; python_version < "3.6"
 uvicorn==0.15.0
