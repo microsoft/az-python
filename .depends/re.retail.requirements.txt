@@ -1,8 +1,11 @@
 azure-identity
 azure-storage-file-datalake==12.4.0
 azureml-core==1.33.0
-commondatamodel-objectmodel
+commondatamodel-objectmodel==1.2.2
 recommenders
 pydantic==1.7.4
 pyspark==2.4.5
 python-dotenv==0.19.0
+requests>=2.25.0
+numpy>=1.17,<1.21
+numba<=0.52.0
