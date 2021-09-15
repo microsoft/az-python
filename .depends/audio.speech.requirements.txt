@@ -1,0 +1,5 @@
+torchaudio<=0.7.2
+soundfile<=0.10.3.post1
+pydub
+librosa >= 0.6.0
+pedalboard
