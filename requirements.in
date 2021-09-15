@@ -92,3 +92,5 @@ soundfile<=0.10.3.post1
 sortedcollections >= 1.0.1
 sortedcontainers >= 2.0.4
 nnAudio<=0.2.4
+modin[ray]<=0.10.2
+modin[dask]<=0.10.2
