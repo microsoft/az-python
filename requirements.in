@@ -88,3 +88,4 @@ validators>=0.18.0,<=0.18.2
 wget>=3.0,<=3.2
 xlrd>=2.0.0,<=2.0.1
 torchaudio<=0.7.2
+soundfile<=0.10.3.post1
