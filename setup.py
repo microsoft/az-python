@@ -46,6 +46,8 @@ sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
 cdm_requires = read_requirements(".depends/cdm.cdm.requirements.txt")
 maro_requires = read_requirements(".depends/maro.maro.requirements.txt")
 
+audio_speech_requires = read_requirements(".depends/audio.speech.requirements.txt")
+
 all = (
     core_requires
     + msft_ama_requires + msft_utils_requires
@@ -56,7 +58,8 @@ all = (
     + retail_requires
     + sc_ecr_requires + sc_ro_requires + sc_ip_requires
     + cdm_requires
-    + maro_requires    
+    + maro_requires 
+    + audio_speech_requires
 )
 
 extras = {
@@ -84,6 +87,7 @@ extras = {
     "sc-ro": sc_ro_requires,
     "cdm": cdm_requires,
     "maro": maro_requires,
+    "audio-speech": audio_speech_requires,
 }
 
 
