@@ -8,7 +8,7 @@ azureml-core==1.33.0
 azureml-defaults==1.33.0
 azureml-pipeline==1.33.0
 azureml-train==1.33.0
-datasets==1.12.0
+datasets==1.12.1
 dateparser==1.0.0
 fastapi==0.65.2
 pandas==1.1.3
