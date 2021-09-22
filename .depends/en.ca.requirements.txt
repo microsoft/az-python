@@ -5,7 +5,7 @@ azure-keyvault==4.1.0
 azure-storage-blob<13.0.0,>=12.7.1
 ciso8601==2.2.0
 fastapi==0.65.2
-GDAL==2.4.2
+GDAL==3.2.3
 geopandas==0.8.2
 matplotlib>=3.4.1
 netCDF4==1.5.7
