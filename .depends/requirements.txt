@@ -106,7 +106,7 @@ pluggy==0.13.1
 preshed==3.0.5
 protobuf==3.17.3
 psycopg2==2.8.6
-pulp==2.5.0
+pulp==2.5.1
 pyarrow>=1.0.1
 pydantic==1.7.4
 pykrige==1.6.0
