@@ -120,7 +120,7 @@ pyspark==2.4.5
 python-dateutil>=2.1
 python-dotenv==0.19.0
 pytorch-pretrained-bert==0.6.2
-pytz==2021.1
+pytz==2021.3
 pyvis==0.1.9
 Pygments>=2.7.4
 pyyaml==5.4.1
