@@ -5,7 +5,8 @@ azure-storage-blob>=12.6.0,<13.0.0
 azure-storage-file-datalake==12.4.0
 azureml-core==1.33.0
 commondatamodel-objectmodel
-cryptography>=3.4.8,<4.0.0
+cryptography>=3.4.7,<4.0.0
+nltk>=3.6.3
 recommenders
 requests>=2.26.0
 pydantic==1.7.4
