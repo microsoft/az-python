@@ -2,7 +2,7 @@ azure-identity
 azure-cosmosdb-table>=1.0.6,<2.0.0
 azure-kusto-data==2.0.0
 azure-storage-blob>=12.6.0,<13.0.0
-azure-storage-file-datalake==12.4.0
+azure-storage-file-datalake==12.5.0
 azureml-core==1.33.0
 commondatamodel-objectmodel
 cryptography>=3.4.7,<4.0.0
