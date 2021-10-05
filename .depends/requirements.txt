@@ -24,7 +24,7 @@ azure-storage-file-datalake==12.4.0
 azure-storage-file==2.1.0
 azure-storage-nspkg==3.1.0
 azure-storage-queue==12.1.6
-azure-storage==0.36.0
+azure-storage==0.37.0
 azure-ai-anomalydetector<=3.0.0b3
 azure-ai-metricsadvisor<2.0.0
 azureml-contrib-automl-pipeline-steps==1.33.0
