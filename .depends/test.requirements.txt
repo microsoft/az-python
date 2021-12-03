@@ -5,7 +5,7 @@ black==19.10b0
 check-manifest==0.45
 cryptography>=3.3,<3.5.0
 Cython
-flake8-bugbear==21.4.3
+flake8-bugbear==21.11.29
 flake8-docstrings
 flake8-formatter_junit_xml
 flake8==3.9.2
