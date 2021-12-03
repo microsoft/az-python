@@ -7,7 +7,7 @@ azure-storage-blob<13.0.0,>=12.6.0
 azureml-core==1.33.0
 azureml-defaults==1.33.0
 azureml-pipeline==1.33.0
-azureml-train==1.33.0
+azureml-train==1.36.0
 beautifulsoup4
 chardet
 fastai>=2.2.7,<=2.3.1
