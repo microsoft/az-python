@@ -14,7 +14,7 @@ resources:
     - repository: microsoftai
       type: git
       name: one/AGAI-Industrial-CICD
-      ref: refs/heads/release/beta-1
+      ref: refs/heads/release/beta-2
     - repository: industrialai
       type: git
       name: one/AGAI-Industrial-AI
