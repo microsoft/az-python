@@ -1,10 +1,5 @@
 trigger: none
 
-pr:
-  branches:
-    include:
-    - main
-
 variables:
   - group: AGAI-Template-Default
   - name: CDP_DEFINITION_BUILD_COUNT
