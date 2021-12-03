@@ -10,7 +10,7 @@ azureml-pipeline==1.33.0
 azureml-train==1.33.0
 beautifulsoup4
 chardet
-fastai>=2.2.7,<=2.3.1
+fastai>=2.2.7,<2.5.4
 fastapi==0.65.2
 lasio==0.25.0
 msrest==0.6.21
