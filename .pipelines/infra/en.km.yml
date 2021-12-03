@@ -1,0 +1,45 @@
+trigger: none
+
+variables:
+  - group: AGAI-Template-Default
+  - name: CDP_DEFINITION_BUILD_COUNT
+    value: $[counter('', 0)] # needed for onebranch.pipeline.version task https://aka.ms/obpipelines/versioning
+
+resources:
+  repositories: 
+    - repository: templates
+      type: git
+      name: OneBranch.Pipelines/GovernedTemplates
+      ref: refs/heads/main
+    - repository: microsoftai
+      type: git
+      name: one/AGAI-Industrial-CICD
+      ref: refs/heads/release/beta-2
+    - repository: industrialai
+      type: git
+      name: one/AGAI-Industrial-AI
+
+extends:
+  template: v2/OneBranch.NonOfficial.CrossPlat.yml@templates # https://aka.ms/obpipelines/templates
+  parameters:
+    globalSdl: # https://aka.ms/obpipelines/sdl
+      policheck:
+        break: true # always break the build on policheck issues. You can disable it by setting to 'false'
+
+    stages:
+    - stage: OfflineTesting
+      jobs:
+      - job: unit_test
+        container: $[variables.LinuxContainerImage]
+        pool:
+          type: linux
+        variables: # More settings at https://aka.ms/obpipelines/yaml/jobs
+          ob_outputDirectory: '$(Build.SourcesDirectory)/out' # this directory is uploaded to pipeline artifacts, reddog and cloudvault. More info at https://aka.ms/obpipelines/artifacts
+        steps:
+        - checkout: self
+        - checkout: industrialai
+
+        - template: .ci/steps/python_ai_test.yml@microsoftai
+          parameters:
+            SrcRoot: $(System.DefaultWorkingDirectory)/AGAI-Industrial-AI/src
+            CDP_USER_MODULE: "azureiai-energy-km"
