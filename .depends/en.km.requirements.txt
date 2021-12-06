@@ -11,7 +11,7 @@ azureml-train==1.33.0
 beautifulsoup4
 chardet
 fastai>=2.2.7,<=2.3.1
-fastapi==0.65.2
+fastapi==0.70.0
 lasio==0.25.0
 msrest==0.6.21
 msrestazure==0.6.4
