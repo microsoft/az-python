@@ -24,7 +24,7 @@ Pillow==8.3.2
 pip>=20.3.3
 pydantic==1.7.4
 python-dateutil>=2.1
-pyyaml==5.4.1
+pyyaml==6.0
 requests==2.26.0
 spacy<=3.0.4
 six<=1.15.0
