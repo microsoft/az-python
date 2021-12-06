@@ -26,10 +26,15 @@ test_requires = read_requirements(".depends/test.requirements.txt")
 
 energy_km_requires = read_requirements(".depends/en.km.requirements.txt")
 
+sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
+sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
+sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
+
 
 all = (
     core_requires
     + energy_km_requires
+    + sc_erc_requires + sc_ip_requires + sc_ro_requires
 )
 
 extras = {
@@ -38,8 +43,10 @@ extras = {
     "core": core_requires,
     "test": test_requires,
     "energy-km": energy_km_requires,
+    "sc-ecr": sc_ecr_requires,
+    "sc-ip": sc_ip_requires,
+    "sc-ro": sc_ro_requires,
 }
-
 
 setup(
     name="ai-python",
