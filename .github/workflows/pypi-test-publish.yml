@@ -54,4 +54,4 @@ jobs:
         python3.7 -m pip install --upgrade pip
         python3.7 -m pip install virtualenv pip-tools
         pip-compile --index-url https://test.pypi.org/simple \
-          ai-python[core,ama,reco,msft-utils,retail,energy-ca,energy-km,fclib,fsi-nlp,fsi-risk,fsi,gem-ent,gem-reco,gem,sc-ro,sc-ip,sc-ecr,sc,cdm,maro,all]
+          ai-python[core,energy-km,all]
