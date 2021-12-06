@@ -27,6 +27,7 @@ python-dateutil>=2.1
 pyyaml==5.4.1
 requests==2.26.0
 spacy<=3.0.4
+six<=1.15.0
 torch==1.7.1
 torchvision==0.8.2
 tqdm==4.62.2
