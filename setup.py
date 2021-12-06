@@ -30,11 +30,14 @@ sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
 sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
 sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
 
+re_fclib_requires = read_requirements(".depends/re.fclib.requirements.txt")
+
 
 all = (
     core_requires
     + energy_km_requires
     + sc_erc_requires + sc_ip_requires + sc_ro_requires
+    + re_fclib_requires
 )
 
 extras = {
@@ -46,6 +49,7 @@ extras = {
     "sc-ecr": sc_ecr_requires,
     "sc-ip": sc_ip_requires,
     "sc-ro": sc_ro_requires,
+    "re-fclib": re_fclib_requires,
 }
 
 setup(
