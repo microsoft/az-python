@@ -1,1 +1,6 @@
 -c ./.depends/en.km.requirements.txt
+-c ./.depends/re.fclib.requirements.txt
+-c ./.depends/re.retail.requirements.txt
+-c ./.depends/sc.ecr.requirements.txt
+-c ./.depends/sc.ip.requirements.txt
+-c ./.depends/sc.ro.requirements.txt
