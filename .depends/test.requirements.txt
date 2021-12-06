@@ -1,6 +1,6 @@
 attrs==21.2.0
 bandit==1.7.0
-black==19.10b0
+black==21.12b0
 check-manifest==0.45
 cryptography>=3.3,<3.5.0
 Cython
