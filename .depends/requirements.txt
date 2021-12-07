@@ -147,7 +147,7 @@ tensorflow==2.6.0
 termcolor==1.1.0
 toml==0.10.2
 torch==1.7.1
-torchvision==0.8.2
+torchvision==0.11.1
 tk
 tqdm==4.62.2
 transformers==4.10.0
