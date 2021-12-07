@@ -1,7 +1,7 @@
 aiohttp>=3.7.4,<=3.7.4
 azure-core>=1.10.0
 azure-cosmosdb-table==1.0.6
-azure-functions==1.7.2
+azure-functions==1.8.0
 azure-search-documents==11.3.0b2
 azure-storage-blob<13.0.0,>=12.6.0
 azureml-core==1.33.0
