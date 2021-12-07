@@ -6,7 +6,7 @@ azure-cognitiveservices-vision-computervision==0.9.0
 azure-storage-blob<13.0.0>=12.6.0
 azureml-core==1.33.0
 azureml-defaults==1.33.0
-azureml-pipeline==1.33.0
+azureml-pipeline==1.36.0
 azureml-train==1.33.0
 datasets==1.12.0
 dateparser==1.0.0
