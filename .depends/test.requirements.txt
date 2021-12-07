@@ -1,6 +1,6 @@
 attrs==21.2.0
 azureml-contrib-reinforcementlearning>=1.21.0
-bandit==1.7.0
+bandit==1.7.1
 black==19.10b0
 check-manifest==0.45
 cryptography>=3.3,<3.5.0
