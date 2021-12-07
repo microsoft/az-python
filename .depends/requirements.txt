@@ -116,7 +116,7 @@ pyodbc==4.0.32
 pypandoc==1.6.3
 pyparsing>=2.0.3
 pyscaffold==4.0.2
-pyspark==2.4.5
+pyspark==3.0.3
 python-dateutil>=2.1
 python-dotenv==0.19.0
 pytorch-pretrained-bert==0.6.2
