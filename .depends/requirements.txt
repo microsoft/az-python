@@ -149,7 +149,7 @@ toml==0.10.2
 torch==1.7.1
 torchvision==0.8.2
 tk
-tqdm==4.62.2
+tqdm==4.62.3
 transformers==4.10.0
 urllib3>=1.26.5
 utm==0.7.0
