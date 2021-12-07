@@ -12,7 +12,7 @@ beautifulsoup4
 chardet
 fastai>=2.2.7,<=2.3.1
 fastapi==0.65.2
-lasio==0.25.0
+lasio==0.29
 msrest==0.6.21
 msrestazure==0.6.4
 opencensus-ext-azure>=1.0.5

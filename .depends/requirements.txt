@@ -72,7 +72,7 @@ Jinja2==2.11.3
 joblib==1.0.1
 keplergl==0.3.0
 kiwisolver>=1.0.0
-lasio==0.25.0
+lasio==0.29
 lightgbm==2.3.0
 lxml>=4.6.3
 MarkupSafe==1.1.1
