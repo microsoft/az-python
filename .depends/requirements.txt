@@ -136,7 +136,7 @@ scikit-learn
 scipy==1.5.4
 seaborn==0.11.1
 sentencepiece==0.1.96
-sentinelsat==1.1.0
+sentinelsat==1.1.1
 seqeval==1.2.2
 setuptools==57.4.0
 skorch==0.10.0

@@ -14,5 +14,5 @@ pandas==1.1.3
 psycopg2==2.8.6
 pydantic==1.7.4
 rasterio>=1.2.1
-sentinelsat==1.1.0
+sentinelsat==1.1.1
 uvicorn==0.15.0
