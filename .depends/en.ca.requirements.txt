@@ -15,4 +15,4 @@ psycopg2==2.8.6
 pydantic==1.7.4
 rasterio>=1.2.1
 sentinelsat==1.1.0
-uvicorn==0.15.0
+uvicorn==0.17.0
