@@ -126,7 +126,7 @@ Pygments>=2.7.4
 pyyaml==5.4.1
 randomgen==1.19.3
 rasterio==1.2.6
-ray==1.1.0
+ray==1.10.0
 ray[rllib]==1.1.0
 recommenders==0.6.0
 regex==2020.11.13
