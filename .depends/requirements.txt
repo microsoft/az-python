@@ -39,7 +39,7 @@ chardet
 ciso8601==2.2.0
 click==7.1.2
 commondatamodel-objectmodel==1.3.1
-cornac==1.13.5
+cornac==1.14.2
 cppy==1.1.0
 cryptography>=3.3,<=3.4.7
 cvxopt>=1.2.6
