@@ -46,7 +46,7 @@ cvxopt>=1.2.6
 cvxpy>=1.1.10
 cycler>=0.10.0
 databricks-cli==0.15.0
-datasets==1.12.0
+datasets==1.18.4
 dateparser==1.0.0
 descartes==1.1.0
 dm-tree==0.1.6
