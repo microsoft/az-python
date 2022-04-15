@@ -16,8 +16,8 @@ version = io.open("./VERSION", encoding="utf-8").read()
 
 setuptools = "setuptools>=54.2.0,<=54.2.0"
 
-def read_requirements(file_path):
-    return io.open(file_path, encoding="utf-8").read()
+def read_requirements(file_path, encoding="utf-8"):
+    return io.open(file_path, encoding=encoding).read()
 
 core_requires = read_requirements(".depends/requirements.txt")
 test_requires = read_requirements(".depends/test.requirements.txt")
@@ -92,18 +92,18 @@ extras = {
 
 
 setup(
-    name="ai-python",
+    name="az-python",
     version=version,
-    description="Microsoft AI Python Package",
+    description="Microsoft Azure Python Packages",
     long_description=readme,
     long_description_content_type="text/x-rst",
     author="Daniel Ciborowski",
     author_email="dciborow@microsoft.com",
     url="https://github.com/microsoft/ai-python",
     project_urls={
-        "Code": "https://github.com/microsoft/ai-python",
-        "Issues": "https://github.com/microsoft/ai-python/issues",
-        "Documents": "https://github.com/microsoft/ai-python"
+        "Code": "https://github.com/microsoft/az-python",
+        "Issues": "https://github.com/microsoft/az-python/issues",
+        "Documents": "https://github.com/microsoft/az-python"
     },
     license="MIT License",
     platforms=["Windows", "Linux", "macOS"],
@@ -120,7 +120,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
         "Topic :: Scientific/Engineering :: Artificial Intelligence"],
-    python_requires=">=3.7,<3.8",
+    python_requires=">=3.7",
     extras_require=extras,
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     include_package_data=True,
