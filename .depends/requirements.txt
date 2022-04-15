@@ -57,7 +57,7 @@ fastapi==0.65.2
 feedparser==5.2.1
 Flask-Login==0.5.0
 flask>=1.0.3,<1.1.5
-GDAL==2.4.2
+GDAL==3.2.3
 GeoAlchemy2==0.9.4
 geopandas==0.8.2
 gym>=0.15.6
