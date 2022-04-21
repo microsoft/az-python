@@ -25,40 +25,11 @@ test_requires = read_requirements(".depends/test.requirements.txt")
 msft_ama_requires = read_requirements(".depends/msft.ama.requirements.txt")
 msft_utils_requires = read_requirements(".depends/msft.utils.requirements.txt")
 
-fclib_requires = read_requirements(".depends/re.fclib.requirements.txt")
-reco_requires = read_requirements(".depends/msft.reco.requirements.txt")
-
-energy_ca_requires = read_requirements(".depends/en.ca.requirements.txt")
-energy_km_requires = read_requirements(".depends/en.km.requirements.txt")
-
-gem_ent_requires = read_requirements(".depends/gem.ent.requirements.txt")
-gem_reco_requires = read_requirements(".depends/gem.reco.requirements.txt")
-
-retail_requires = read_requirements(".depends/re.retail.requirements.txt")
-
-fsi_nlp_requires = read_requirements(".depends/fsi.nlp.requirements.txt")
-fsi_risk_requires = read_requirements(".depends/fsi.risk.requirements.txt")
-
-sc_ro_requires = read_requirements(".depends/sc.ro.requirements.txt")
-sc_ip_requires = read_requirements(".depends/sc.ip.requirements.txt")
-sc_ecr_requires = read_requirements(".depends/sc.ecr.requirements.txt")
-
-cdm_requires = read_requirements(".depends/cdm.cdm.requirements.txt")
-maro_requires = read_requirements(".depends/maro.maro.requirements.txt")
-
 audio_speech_requires = read_requirements(".depends/audio.speech.requirements.txt")
 
 all = (
     core_requires
     + msft_ama_requires + msft_utils_requires
-    + energy_ca_requires + energy_km_requires
-    + fclib_requires
-    + fsi_nlp_requires + fsi_risk_requires
-    + gem_ent_requires + gem_reco_requires
-    + retail_requires
-    + sc_ecr_requires + sc_ro_requires + sc_ip_requires
-    + cdm_requires
-    + maro_requires 
     + audio_speech_requires
 )
 
@@ -68,28 +39,9 @@ extras = {
     "core": core_requires,
     "test": test_requires,
     "ama": msft_ama_requires,
-    "fclib": fclib_requires,
-    "reco": reco_requires,
     "msft-utils": msft_utils_requires,
-    "retail": retail_requires,
-    "energy": energy_ca_requires,
-    "energy-ca": energy_ca_requires,
-    "energy-km": energy_km_requires,
-    "fsi": fsi_risk_requires + fsi_nlp_requires,
-    "fsi-nlp": fsi_nlp_requires,
-    "fsi-risk": fsi_risk_requires,
-    "gem": gem_ent_requires + gem_reco_requires,
-    "gem-ent": gem_ent_requires,
-    "gem-reco": gem_reco_requires, 
-    "sc": sc_ro_requires + sc_ip_requires + sc_ecr_requires,
-    "sc-ecr": sc_ecr_requires,
-    "sc-ip": sc_ip_requires,
-    "sc-ro": sc_ro_requires,
-    "cdm": cdm_requires,
-    "maro": maro_requires,
     "audio-speech": audio_speech_requires,
 }
-
 
 setup(
     name="az-python",
@@ -107,7 +59,7 @@ setup(
     },
     license="MIT License",
     platforms=["Windows", "Linux", "macOS"],
-    keywords=["ai"],
+    keywords=["azure"],
     classifiers=[
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
