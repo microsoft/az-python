@@ -1,6 +1,6 @@
 bandit==1.7.0
 black==19.10b0
-flake8==3.9.2
+flake8==4.0.1
 mock==4.0.2
 mypy==0.910
 pylint==2.9.5
