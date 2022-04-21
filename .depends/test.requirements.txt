@@ -8,6 +8,6 @@ pylint_junit
 pytest-cov==2.12.1
 pytest-mock<=3.6.1
 pytest-runner
-pytest==6.2.1
+pytest==7.1.1
 testpath==0.5.0
 typing-extensions>=3.7.4.3,<3.11.0.0
