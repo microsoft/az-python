@@ -5,7 +5,7 @@ mock==4.0.2
 mypy==0.910
 pylint==2.9.5
 pylint_junit
-pytest-cov==2.12.1
+pytest-cov==3.0.0
 pytest-mock<=3.6.1
 pytest-runner
 pytest==6.2.1
