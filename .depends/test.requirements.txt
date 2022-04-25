@@ -13,6 +13,6 @@ pylint_junit
 pytest-cov==3.0.0
 pytest-mock<3.7.1
 pytest-runner
-pytest==7.1.1
+pytest==7.1.2
 shellcheck-py==0.8.0.4
 testpath==0.6.0
