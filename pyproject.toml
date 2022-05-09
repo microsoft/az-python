@@ -12,3 +12,35 @@ dynamic = ["version", "description"]
 
 [project.urls]
 Home = "https://github.com/microsoft/az-python"
+
+[project.optional-dependencies]
+audio-speech = [
+  "torchaudio<=0.7.2",
+  "soundfile<=0.10.3.post1",
+  "pydub<=0.25.1",
+  "librosa<=0.7.0",
+  "pedalboard<=0.3.6"
+]
+ama = [
+  "azure-mgmt-deploymentmanager",
+  "azure-mgmt-resource",
+  "azure-storage-blob",
+  "azure-identity>=1.2.0",
+  "urllib3>=1.15",
+  "six>=1.10",
+  "certifi",
+  "python-dateutil",
+  "requests",
+  "pyyaml",
+  "wget",
+  "adal",
+  "cryptography>=3.3.1"
+]
+msft-utils = [
+  "azureml-core==1.33.0",
+  "azure-identity>=1.4.1",
+  "azure-keyvault==4.1.0",
+  "msrestazure>=0.6.4",
+  "azure-mgmt-resource>=12.1.0",
+  "python-dotenv>=0.14.0,<0.20.0"
+]
