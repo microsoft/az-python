@@ -1,6 +1,6 @@
-# AI Python by Microsoft
+# Azure Python by Microsoft
 
-This is a library of Python packages scanned using various open source and internal tools to provide up-to-date, and secury dependencies.  
+This is a collection of Python packages scanned using various open source and internal tools to provide up-to-date, and secury dependencies.  
 
 ## Installation
 Currently Python3.7 is supported.
