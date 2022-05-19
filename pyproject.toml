@@ -44,3 +44,6 @@ msft-utils = [
   "azure-mgmt-resource>=12.1.0",
   "python-dotenv>=0.14.0,<0.20.0"
 ]
+
+[tool.flit.module]
+name = "az-python"
