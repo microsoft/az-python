@@ -18,7 +18,7 @@ audio-speech = [
   "torchaudio<=0.7.2",
   "soundfile<=0.10.3.post1",
   "pydub<=0.25.1",
-  "librosa<=0.7.0",
+  "librosa<0.10.0",
   "pedalboard<=0.3.6"
 ]
 ama = [
