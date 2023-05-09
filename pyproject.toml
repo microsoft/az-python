@@ -15,7 +15,7 @@ Home = "https://github.com/microsoft/az-python"
 
 [project.optional-dependencies]
 audio-speech = [
-  "torchaudio<=0.7.2",
+  "torchaudio<=2.0.2",
   "soundfile<=0.10.3.post1",
   "pydub<=0.25.1",
   "librosa<=0.7.0",
