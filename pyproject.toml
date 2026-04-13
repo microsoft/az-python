@@ -27,7 +27,7 @@ ama = [
   "azure-storage-blob",
   "azure-identity>=1.2.0",
   "urllib3>=1.15",
-  "six>=1.10",
+  "six>=1.17.0",
   "certifi",
   "python-dateutil",
   "requests",
