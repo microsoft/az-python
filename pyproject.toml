@@ -34,7 +34,7 @@ ama = [
   "pyyaml",
   "wget",
   "adal",
-  "cryptography>=3.3.1"
+  "cryptography>=48.0.1"
 ]
 msft-utils = [
   "azureml-core==1.33.0",
